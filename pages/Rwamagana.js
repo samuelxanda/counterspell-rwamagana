@@ -29,9 +29,9 @@ import Head from "next/head";
 // TODO: Change `ExampleCity` to the name of your city. This should match the folder you copied!
 import Hero from "../components/Rwamagana/Hero";
 import About from "../components/Rwamagana/About";
-import Guilds from "../components/Rwamagana/Guilds";
-import Steps from "../components/Rwamagana/Steps";
-import Locations from "../components/Rwamagana/Locations";
+// import Guilds from "../components/Rwamagana/Guilds";
+// import Steps from "../components/Rwamagana/Steps";
+// import Locations from "../components/Rwamagana/Locations";
 import Faq from "../componentsRwamagana/Faq";
 import Footer from "../components/Rwamagana/Footer";
 
@@ -132,9 +132,9 @@ export default function Rwamagana() {
           <div className="absolute top-0 left-0 right-0 -bottom-4 -z-10 bg-dark"></div>
 
           <About />
-          <Guilds />
-          <Steps />
-          <Locations />
+          // <Guilds />
+          // <Steps />
+          // <Locations />
 
           <div className="flex flex-col justify-center py-12 text-center faq retro">
             <div className="m-6">
