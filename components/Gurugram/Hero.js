@@ -60,7 +60,7 @@ function HeroScroll() {
             className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]"
           />
           <img
-            src="/title.png"
+            src="/public/city/Gurugram/gurugram.png"
             alt="Counterspell"
             className="absolute h-auto top-[12%] lg:top-[17%] w-[70%] lg:scale-[130%] right-[15%]"
           />
