@@ -25,9 +25,7 @@ export default function Schedule() {
             <div className="flex" key={i}>
               <p>{item.event}</p>
               <div className="mx-4 -translate-y-3 border-b-4 border-dotted grow"></div>
-              <p>
-                {item.time}{" "}
-              </p>
+              <p>{item.time}</p>
             </div>
           ))}
         </div>
