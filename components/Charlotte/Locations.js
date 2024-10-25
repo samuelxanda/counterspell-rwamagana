@@ -18,10 +18,10 @@ export default function Locations() {
     <div className="relative px-6 py-24 text-center neuebit bg-darker retro">
       <p className="text-3xl uppercase">
         {/* TODO: Replace `Example City` with your city */}
-        ¿No puedes llegar a Lima?
+        Can't make it to Charlotte?
       </p>
       <p className="text-xl">
-      ¡Hay muchas más ciudades organizando counterspell a lo largo del mundo!
+        There are 200+ other Counterspell locations worldwide!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
@@ -37,17 +37,17 @@ export default function Locations() {
         <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
           <p>
             {/* TODO: Replace `Example City` with your city */}
-            Counterspell Lima es organizado por adolescentes, para adolescentes.
+            Counterspell Charlotte is organized by teenagers, for teenagers.
           </p>
           <p>
-            Organiza un Counterspell en tu ciudad{" "}
+            Organize a Counterspell event in your city.{" "}
             <a
               href="https://hack.club/counterspell-signup"
               target="_blank"
               rel="noreferrer"
               className="text-pink"
             >
-              Regístrate
+              Sign up
             </a>
             .
           </p>
@@ -56,10 +56,10 @@ export default function Locations() {
 
       <div className="flex flex-col items-center space-y-3 uppercase">
         <p className="text-xl text-center">
-        Recibe una notificación cuando se abran los registros
+          Get notified when registrations open
         </p>
         {/* TODO: Replace `Example City` with your city */}
-        <Subscribe eventName="Lima" />
+        <Subscribe eventName="Charlotte" />
       </div>
     </div>
   );

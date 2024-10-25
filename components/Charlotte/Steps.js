@@ -13,7 +13,7 @@ export default function Steps() {
               <StepCard
                 img="/photos/3.png"
                 // TODO: Change `Example City` to the name of your city
-                text="Sign up for Counterspell Singapore"
+                text="Sign up for Counterspell Charlotte"
               />
               <StepCard
                 img="/photos/4.png"
@@ -36,7 +36,7 @@ export default function Steps() {
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
-              Counterspell Singapore will go on for{" "}
+              Counterspell Charlotte will go on for{" "}
               {/* TODO: Change `24 hours` to match your event duration */}
               <span className="text-pink">24 hours</span>
             </p>

@@ -4,9 +4,10 @@ export default function Guilds() {
   return (
     <div className="flex flex-col items-center justify-center py-24 text-center retro bg-darker">
       <div className="text-3xl uppercase leading-[4rem] mx-6">
-        <p>¿Artista, Músico o Programador?</p>
+        <p>Artist, Musician or Coder?</p>
         <p>
-          ¡Únete a uno de los tres <span className="text-pink">grupos</span> cuando te registres!
+          Join one of three <span className="text-pink">guilds</span> when you
+          sign up!
         </p>
       </div>
 
@@ -14,7 +15,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/city/Lima-cards/artista.png"
+              src="/cards/artist.png"
               alt="Artist card"
               className="rounded-lg max-w-[340px]"
             />
@@ -23,7 +24,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/city/Lima-cards/musico.png"
+              src="/cards/musician.png"
               alt="Musician card"
               className="rounded-lg max-w-[340px]"
             />
@@ -32,7 +33,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/city/Lima-cards/programador.png"
+              src="/cards/hacker.png"
               alt="Hacker card"
               className="rounded-lg  max-w-[340px]"
             />
@@ -44,8 +45,9 @@ export default function Guilds() {
         <div className="max-w-6xl px-6 py-6 mt-6 border-4 border-dashed border-pink">
           <p className="text-3xl neuebit">
             {/* TODO: Change `Example City` to the name of your city */}
-            ¡Puedes unirte al grupo con el que te identifiques para swags(botines) y pins exclusivos! También podrás 
-            competir contra otros grupos en diversas actividades/retos a lo largo de Counterspell Lima.
+            You can join the guild you identify with for exclusive swag and
+            badges! You also get to compete against other guilds in friendly
+            activities/challenges throughout Counterspell Charlotte!
           </p>
         </div>
       </div>
