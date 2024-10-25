@@ -37,7 +37,7 @@ export default function Steps() {
               {/* TODO: Change `Example City` to the name of your city */}
               Counterspell Lima será por{" "}
               {/* TODO: Change `24 hours` to match your event duration */}
-              <span className="text-pink">12 hours</span>
+              <span className="text-pink">12 horas</span>
             </p>
             <p>Aquí tienes un horario preliminar para saber qué esperar.</p>
           </div>
