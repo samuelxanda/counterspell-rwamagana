@@ -10,7 +10,7 @@ export default function About() {
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
               Counterspell Singapore is a beginner friendly game jam for high
-              schoolers happening in Example City where{" "}
+              schoolers happening in Singapore where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
