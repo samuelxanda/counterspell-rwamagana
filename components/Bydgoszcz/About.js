@@ -10,7 +10,7 @@ export default function About() {
             <p>
               {}
               Counterspell Bydgoszcz is a beginner friendly game jam for high
-              schoolers happening in Example City where{" "}
+              schoolers happening in Bydgoszcz where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
