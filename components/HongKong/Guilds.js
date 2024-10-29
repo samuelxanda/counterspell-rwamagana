@@ -1,6 +1,8 @@
 import { Tilt } from "react-next-tilt";
 
 export default function Guilds() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+
   return (
     <div className="flex flex-col items-center justify-center py-24 text-center fusion-pixel bg-darker">
       <div className="text-5xl uppercase leading-[4rem] mx-6">
@@ -11,33 +13,61 @@ export default function Guilds() {
       </div>
 
       <div className="flex flex-wrap justify-center w-full max-w-6xl gap-8 py-10 xl:justify-between">
-        <Tilt className="rounded-lg" scale={1.1}>
-          <div>
-            <img
-              src="/cards/artist.png"
-              alt="Artist card"
-              className="rounded-lg max-w-[340px]"
-            />
-          </div>
-        </Tilt>
-        <Tilt className="rounded-lg" scale={1.1}>
-          <div>
-            <img
-              src="/cards/musician.png"
-              alt="Musician card"
-              className="rounded-lg max-w-[340px]"
-            />
-          </div>
-        </Tilt>
-        <Tilt className="rounded-lg" scale={1.1}>
-          <div>
-            <img
-              src="/cards/hacker.png"
-              alt="Hacker card"
-              className="rounded-lg  max-w-[340px]"
-            />
-          </div>
-        </Tilt>
+        {isMobile ? (
+          <>
+            <div>
+              <img
+                src="/cards/artist.png"
+                alt="Artist card"
+                className="rounded-lg max-w-[340px]"
+              />
+            </div>
+            <div>
+              <img
+                src="/cards/musician.png"
+                alt="Musician card"
+                className="rounded-lg max-w-[340px]"
+              />
+            </div>
+            <div>
+              <img
+                src="/cards/hacker.png"
+                alt="Hacker card"
+                className="rounded-lg  max-w-[340px]"
+              />
+            </div>
+          </>
+        ) : (
+          <>
+            <Tilt className="rounded-lg" scale={1.1}>
+              <div>
+                <img
+                  src="/cards/artist.png"
+                  alt="Artist card"
+                  className="rounded-lg max-w-[340px]"
+                />
+              </div>
+            </Tilt>
+            <Tilt className="rounded-lg" scale={1.1}>
+              <div>
+                <img
+                  src="/cards/musician.png"
+                  alt="Musician card"
+                  className="rounded-lg max-w-[340px]"
+                />
+              </div>
+            </Tilt>
+            <Tilt className="rounded-lg" scale={1.1}>
+              <div>
+                <img
+                  src="/cards/hacker.png"
+                  alt="Hacker card"
+                  className="rounded-lg  max-w-[340px]"
+                />
+              </div>
+            </Tilt>
+          </>
+        )}
       </div>
 
       <div className="flex justify-center leading-[3rem] tracking-wider mx-6">
