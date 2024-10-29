@@ -3,7 +3,7 @@ export default function About() {
     <div className="flex justify-center neuebit text-3xl py-24">
       <div className="space-y-12 max-w-8xl">
         <h2 className="pb-6 text-4xl text-center uppercase retro text-whitepurp">
-          Crea juegos, <span className="text-pink">conoce gente</span>
+          Crea juegos, <span className="text-pink">conoce gente genial</span>
         </h2>
         <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-12 leading-[3rem] tracking-wider mx-6 2xl:mx-0">
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
