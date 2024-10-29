@@ -6,7 +6,7 @@ export default function Subscribe(props) {
   return (
     <form
       method="post"
-      action="/api/pre-signup"
+      action="/api/v1/pre-signup"
       className="flex flex-col space-y-4 text-2xl retro sm:text-3xl lg:flex-row lg:space-y-0"
       onSubmit={handleSubmit}
     >
@@ -42,9 +42,9 @@ export default function Subscribe(props) {
         if (response.ok) {
           form.reset();
           setSubmitBtn("Success, redirecting");
-          setTimeout(()=>{
+          setTimeout(() => {
             document.location.href = "https://wa.tcmaker.org/event-5908977";
-          }, 1000)
+          }, 1000);
         } else {
           setSubmitBtn("Error");
         }

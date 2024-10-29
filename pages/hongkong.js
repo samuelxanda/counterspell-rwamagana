@@ -129,9 +129,7 @@ export default function HongKong() {
 
           <div className="flex flex-col justify-center py-12 text-center faq fusion-pixel">
             <div className="m-6">
-              <p className="mb-6 text-5xl uppercase">
-                常見問題
-              </p>
+              <p className="mb-6 text-5xl uppercase">常見問題</p>
               <div className="flex justify-center">
                 <Faq />
               </div>
