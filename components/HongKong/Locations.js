@@ -20,7 +20,7 @@ export default function Locations() {
         嚟唔到香港？
       </p>
       <p className="text-2xl fusion-pixel">
-        全球有 200+ 個 Counterspell 活動！
+        全球有 100+ 個 Counterspell 活動！
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">

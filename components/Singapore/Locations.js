@@ -23,7 +23,7 @@ export default function Locations() {
         Can't make it to Singapore?
       </p>
       <p className="text-xl">
-        There are 200+ other Counterspell locations worldwide!
+        There are 100+ other Counterspell locations worldwide!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
