@@ -47,13 +47,13 @@ export default function Sponsors() {
               />
             </a>
             <a
-              href="https://www.fillout.com/"
+              href="https://www.hkace.org.hk/"
               target="_blank"
               class="motion-safe:hover:scale-105 motion-safe:transition-all flex"
             >
               <img
-                src="/city/HongKong/Fillout.png"
-                alt="Fillout"
+                src="/city/HongKong/HKACE.png"
+                alt="HKACE"
                 class="w-auto h-28 md:h-28"
                 style={{ imageRendering: "auto" }}
               />
