@@ -1,4 +1,7 @@
 import Subscribe from "../Subscribe";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("./../Map"), { ssr:false });
 
 export default function Locations({ registrationRef }) {
   // Do not update this list! We'll update it for you.
@@ -23,48 +26,11 @@ export default function Locations({ registrationRef }) {
       <p className="text-xl">
         There are 100+ other Counterspell locations worldwide!
       </p>
-      <div className="flex justify-center pt-24">
-        <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
-          {cities.map((city, i) => (
-            <p
-              className={`${
-                city.includes("Boston") ? "text-pink" : ""
-              } lg:odd:text-left lg:even:text-right`}
-              key={i}
-            >
-              {city}
-            </p>
-          ))}
-        </div>
-      </div>
 
-      <div className="flex justify-center my-20 space-y-2 text-2xl text-center">
-        <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
-          <p>
-            {/* TODO: Replace `Example City` with your city */}
-            Counterspell Boston is organized by teenagers, for teenagers.
-          </p>
-          <p>
-            Organize a Counterspell event in your city.{" "}
-            <a
-              href="https://hack.club/counterspell-signup"
-              target="_blank"
-              rel="noreferrer"
-              className="text-pink"
-            >
-              Sign up
-            </a>
-            .
-          </p>
+      <div className="flex justify-center text-center text-2xl space-y-2 my-20">
+        <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
+          <Map />
         </div>
-      </div>
-
-      <div ref={registrationRef} className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        {/* TODO: Replace `Example City` with your city */}
-        <Subscribe eventName="Boston" />
       </div>
     </div>
   );
