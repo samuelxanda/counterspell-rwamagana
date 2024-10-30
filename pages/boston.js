@@ -70,12 +70,6 @@ export default function Boston() {
     setIsMuted(!isMuted);
   }
 
-  const scrollToRegistration = () => {
-    if (registrationRef.current) {
-      registrationRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  };
-
   return (
     <>
       <Head>
