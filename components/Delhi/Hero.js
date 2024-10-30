@@ -75,10 +75,10 @@ function HeroScroll() {
           <div className="flex items-center justify-center text-center">
             <div className="z-50 absolute top-[43%] lg:top-[47%] text-[60%] sm:text-[80%] md:text-[100%] lg:text-[140%] tracking-wide">
               <p className="text-[#CFD8ED] retro">
-                A BEGINNER FRIENDLY GAME JAM
+                A 12 HR BEGINNER FRIENDLY GAME JAM
               </p>
               <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
-                NOVEMBER 23-24, 2024 • DELHI
+                NOVEMBER 23, 2024 • DELHI
               </p>
             </div>
           </div>
