@@ -8,7 +8,7 @@ export default function About() {
         <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-12 leading-[3rem] tracking-wider mx-6 2xl:mx-0">
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
-              Counterspell Nairobi is a beginner friendly game jam for high schoolers happening in Nairobi on the 23rd of November, 2024 at
+              Counterspell Nairobi is a beginner friendly game jam for high schoolers happening in Nairobi on the 23rd of November,2024 at
               SNDBX International in Kilimani <span className="text-pink">artists, musicians, and coders</span> get together to build apps
               and games.
             </p>
@@ -18,6 +18,11 @@ export default function About() {
               Whether you’re a beginner or experienced in programming- we’ll have workshops, resources and mentors throughout the 12 hours
               to help you with your project.
             </p>
+            <h2 className="pb-6 text-4xl text-center uppercase retro text-whitepurp">
+              <a href="https://forms.fillout.com/t/uHVqq7xfoqus" target="_blank" rel="noreferrer" className="text-pink">
+                Sign Up Now
+              </a>
+            </h2>
           </div>
           <div
             className="h-64 bg-center bg-cover border-4 border-dashed border-pink bg-clip-padding xl:h-auto"
