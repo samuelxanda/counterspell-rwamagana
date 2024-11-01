@@ -72,10 +72,11 @@ export default function Map({full}) {
           >
            <Popup>
             {event.website ? 
-                <a href={event.website} rel="noopener noreferrer">
+                <a className="neuebit text-lg m-0" href={event.website} rel="noopener noreferrer">
                     Counterspell {event.name}
                 </a> :
-                <>Counterspell {event.name}</>
+                // idk why but even with the m-0 the margin is still there on the top and bottom so I added inline css
+                <p className="neuebit text-lg m-0" style={{margin:0}} >Counterspell {event.name} </p>
             }
           </Popup>
           </Marker>
