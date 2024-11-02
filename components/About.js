@@ -9,7 +9,7 @@ export default function About() {
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
               Counterspell is a beginner friendly game jam for high schoolers
-              happening in 200+ cities simultaneously where{" "}
+              happening in 100+ cities simultaneously where{" "}
               <span className="text-pink">artists, musicians, and coders</span>{" "}
               get together to build apps and games.
             </p>

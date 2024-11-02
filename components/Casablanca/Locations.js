@@ -1,4 +1,7 @@
 import Subscribe from "../Subscribe";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("../Map"), { ssr:false });
 
 export default function Locations() {
   // Do not update this list! We'll update it for you.
@@ -21,7 +24,7 @@ export default function Locations() {
         Can't make it to Casablanca?
       </p>
       <p className="text-xl">
-        There are 200+ other Counterspell locations worldwide!
+        There are 100+ other Counterspell locations worldwide!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
@@ -30,6 +33,12 @@ export default function Locations() {
               {city}
             </p>
           ))}
+        </div>
+      </div>
+
+      <div className="flex justify-center text-center text-2xl space-y-2 my-20">
+        <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
+          <Map />
         </div>
       </div>
 
@@ -43,11 +52,11 @@ export default function Locations() {
       </div>
 
       <div className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        {/* TODO: Replace `Example City` with your city */}
-        <Subscribe eventName="Casablanca" />
+        <div className="flex flex-col space-y-4 text-2xl retro sm:text-3xl lg:flex-row lg:space-y-0">
+          <a href="https://counterspellcasablanca.fillout.com/t/7LZ3oYm3Efus" target="_blank">
+            <button class="h-16 px-4 uppercase border-4 bg-pink sm:h-20 border-pink" id="formSubmit">Register interest</button>
+          </a>
+        </div>
       </div>
     </div>
   );

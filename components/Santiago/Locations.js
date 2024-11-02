@@ -21,7 +21,7 @@ export default function Locations() {
         ¿No puedes llegar a Counterspell Santiago?
       </p>
       <p className="text-xl">
-        Hay mas de 200 ubicaciones counterspell en todo el mundo!
+        Hay mas de 100 ubicaciones counterspell en todo el mundo!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">

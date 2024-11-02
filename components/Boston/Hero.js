@@ -60,26 +60,31 @@ function HeroScroll() {
             className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]"
           />
           <img
+            src="/city/boston/boston-logo.png"
+            alt="Boston"
+            className="absolute h-auto top-0 top-[41%] scale-[35%] lg:top-[48%] lg:scale-[45%]"
+          />
+          <img
             src="/title.png"
             alt="Counterspell"
-            className="absolute h-auto top-[12%] lg:top-[17%] w-[70%] lg:scale-[130%] right-[15%]"
+            className="absolute h-auto top-[12%] lg:top-[16%] w-[70%] lg:scale-[125%] right-[15%]"
           />
           <img
             src="/smoke.gif"
             alt="Smoke"
-            className="absolute h-auto top-0 lg:top-[5%] w-full lg:scale-[130%] translate-x-[1%] hue-rot"
+            className="absolute h-auto top-0 lg:top-[3%] w-full lg:scale-[130%] translate-x-[2%] hue-rot"
           />
 
           <div className="hidden absolute top-[90%] lg:top-[145%] left-[9%] w-[80%] lg:scale-[130%] bg-[#090808] h-screen" />
 
           <div className="flex items-center justify-center text-center">
-            <div className="z-50 absolute top-[43%] lg:top-[47%] text-[60%] sm:text-[80%] md:text-[100%] lg:text-[140%] tracking-wide">
+            <div className="z-50 absolute top-[43%] lg:top-[45%] text-[60%] sm:text-[80%] md:text-[100%] lg:text-[140%] tracking-wide">
               <p className="text-[#CFD8ED] retro">
                 A BEGINNER FRIENDLY GAME JAM
               </p>
-              <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
+              <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] lg:mt-2">
                 {/* TODO: Replace `EXAMPLE CITY` with your city */}
-                NOVEMBER 23-24, 2024 • BOSTON
+                NOVEMBER 23-24, 2024
               </p>
             </div>
           </div>
