@@ -38,7 +38,7 @@ const schema = [
   {
     name: "Phone Number",
     type: "phone",
-    required: false,
+    required: true,
   },
   {
     name: "Address Line 1",
