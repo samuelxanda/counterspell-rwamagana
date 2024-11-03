@@ -28,13 +28,13 @@ import useSound from "use-sound";
 import Head from "next/head";
 
 // TODO: Change `ExampleCity` to the name of your city. This should match the folder you copied!
-import Hero from "../components/Abu Dhabi/Hero";
-import About from "../components/Abu Dhabi/About";
-import Guilds from "../components/Abu Dhabi/Guilds";
-import Steps from "../components/Abu Dhabi/Steps";
-import Locations from "../components/Abu Dhabi/Locations";
-import Faq from "../components/Abu Dhabi/Faq";
-import Footer from "../components/Abu Dhabi/Footer";
+import Hero from "../components/AbuDhabi/Hero";
+import About from "../components/AbuDhabi/About";
+import Guilds from "../components/AbuDhabi/Guilds";
+import Steps from "../components/AbuDhabi/Steps";
+import Locations from "../components/AbuDhabi/Locations";
+import Faq from "../components/AbuDhabi/Faq";
+import Footer from "../components/AbuDhabi/Footer";
 
 // TODO: Change `ExampleCity` to the name of your city
 export default function Abu Dhabi() {
