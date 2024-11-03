@@ -32,6 +32,9 @@ export default function Locations() {
               {city}
             </p>
           ))}
+          <p className="lg:odd:text-left lg:even:text-right">
+            ...and more!
+          </p>
         </div>
       </div>
 
@@ -51,7 +54,7 @@ export default function Locations() {
             >
               Main website
             </a>
-            .
+            
           </p>
         </div>
       </div>
