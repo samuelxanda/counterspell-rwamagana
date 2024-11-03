@@ -9,18 +9,24 @@ export default function About() {
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
-              Counterspell Example City is a beginner friendly game jam for high schoolers happening in Example City where{" "}
-              <span className="text-pink">artists, musicians, and coders</span> get together to build apps and games.
+              Counterspell Example City is a beginner friendly game jam for high
+              schoolers happening in Example City where{" "}
+              <span className="text-pink">
+                artists, musicians, and coders
+              </span>{" "}
+              get together to build apps and games.
             </p>
             <p className="text-2xl uppercase retro">Build whatever you want!</p>
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
-              Any game counts! The theme for Counterspell Example City will be decided through peer voting before the event starts.{" "}
+              Any game counts! The theme for Counterspell Example City will be
+              decided through peer voting before the event starts.{" "}
             </p>
             <p>
               {/* TODO: Change `24 hours` to match your event duration */}
-              Whether you’re a beginner or experienced in programming- we’ll have workshops, resources and mentors throughout the 24 hours
-              to help you with your project.
+              Whether you’re a beginner or experienced in programming- we’ll
+              have workshops, resources and mentors throughout the 24 hours to
+              help you with your project.
             </p>
           </div>
           <div
