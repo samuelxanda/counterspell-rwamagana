@@ -19,7 +19,7 @@ export default function About() {
               to help you with your project.
             </p>
             <h2 className="pb-6 text-4xl text-center uppercase retro text-whitepurp">
-              <a href="https://forms.fillout.com/t/uHVqq7xfoqus" target="_blank" rel="noreferrer" className="text-pink">
+              <a href="https://forms.hackclub.com/t/sdMpoL7wK9us" target="_blank" rel="noreferrer" className="text-pink">
                 Sign Up Now
               </a>
             </h2>
