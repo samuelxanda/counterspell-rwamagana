@@ -95,6 +95,14 @@ export default function Nairobi() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
 
+        <a
+          className="fixed z-50 hidden w-48 text-center text-3xl px-5 py-3 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
+          target="_blank"
+          style={{ textDecorationLine: "none" }}
+        >
+          Sign up
+        </a>
         <Hero />
 
         <div className="relative">
