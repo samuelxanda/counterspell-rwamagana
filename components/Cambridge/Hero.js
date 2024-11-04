@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-[20%] md:w-40 2xl:w-64">
         <Banner style={{ width: "100%" }} />
       </div>
-      <div className="absolute top-0 right-0 w-[20%] md:w-40 2xl:w-64">
+      <div className="absolute top-0 left-0 w-[20%] md:w-40 2xl:w-64">
         <a
           href="https://raspberrypi.org/"
           target="_blank"
@@ -17,8 +17,8 @@ export default function Hero() {
             style={{
               width: "230px",
               position: "absolute",
-              top: "10px",
-              right: 10,
+              top: "80px",
+              left: 10,
               border: 0,
               zIndex: 999,
             }}

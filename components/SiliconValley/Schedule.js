@@ -26,7 +26,10 @@ export default function Schedule() {
 
   return (
     <>
-      <h2 className="text-center text-4xl uppercase retro text-whitepurp">
+      <h2
+        className="text-center text-4xl uppercase retro text-whitepurp"
+        id="schedule"
+      >
         Schedule
       </h2>
       <div className="flex flex-col items-center neuebit">

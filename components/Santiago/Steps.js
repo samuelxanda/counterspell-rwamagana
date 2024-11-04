@@ -6,7 +6,7 @@ export default function Steps() {
       <div className="flex flex-col justify-center text-center">
         <div className="">
           <p className="py-10 mx-6 text-3xl uppercase retro">
-            How does a <span className="text-pink">game jam</span> work?
+            Como funciona una <span className="text-pink">game jam</span>?
           </p>
           <div className="flex justify-center mx-12 my-6">
             <div className="flex flex-wrap items-center justify-center gap-6 p-8 border-4 border-dashed border-pink inter">
@@ -35,9 +35,7 @@ export default function Steps() {
           </div>
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
-              {/* TODO: Change `Example City` to the name of your city */}
               Counterspell Santiago durara{" "}
-              {/* TODO: Change `24 hours` to match your event duration */}
               <span className="text-pink">12 horas</span>
             </p>
             <p>Aqui hay un horario aproximado para que sepas lo que esperarte!</p>

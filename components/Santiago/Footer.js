@@ -49,7 +49,7 @@ export default function Footer() {
           className="mx-2"
         >
           {/* Please keep this attribution */}
-          Arte por by Elena Baskakova (18, Boston)
+          Arte por Elena Baskakova (18, Boston)
         </a>
       </div>
     </div>
