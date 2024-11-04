@@ -17,7 +17,6 @@ export default function Locations() {
   return (
     <div className="relative px-6 py-24 text-center neuebit bg-darker retro">
       <p className="text-3xl uppercase">
-        {/* TODO: Replace `Example City` with your city */}
         Can't make it to Moses Lake?
       </p>
       <p className="text-xl">
@@ -36,7 +35,6 @@ export default function Locations() {
       <div className="flex justify-center my-20 space-y-2 text-2xl text-center">
         <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
           <p>
-            {/* TODO: Replace `Example City` with your city */}
             Counterspell Moses Lake is organized by teenagers, for teenagers.
           </p>
           <p>
@@ -58,7 +56,6 @@ export default function Locations() {
         <p className="text-xl text-center">
           Get notified when registrations open
         </p>
-        {/* TODO: Replace `Example City` with your city */}
         <Subscribe eventName="Moses Lake" />
       </div>
     </div>
