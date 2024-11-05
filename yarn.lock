@@ -94,7 +94,7 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@hackclub/banner@1.0.3":
+"@hackclub/banner@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@hackclub/banner/-/banner-1.0.3.tgz#19dea70803ade0228e7445895fb7f30befa4151a"
   integrity sha512-feY7ZcNrLCWrjYMn3G640LuyMlmJP0GXVPQeyOqe7zU1d4/jcxbly+JvAG4DtEab/z2gHxKUM/ZQ3FK0qMI6oA==
@@ -1096,7 +1096,7 @@ core-util-is@1.0.2:
   dependencies:
     "@dnd-kit/core" "^6.1.0"
     "@dnd-kit/sortable" "^8.0.0"
-    "@hackclub/banner" "1.0.3"
+    "@hackclub/banner" "^1.0.3"
     "@tsparticles/confetti" "^3.5.0"
     airtable-plus "^1.0.4"
     counterspell "file:../../../AppData/Local/Yarn/Cache/v6/npm-counterspell-0.1.0-0f5df1d6-ec00-4d62-8657-0941807be1ca-1728960406830/node_modules/counterspell"
