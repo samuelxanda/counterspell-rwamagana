@@ -99,7 +99,7 @@ export default function Cambridge() {
         </audio>
         <a
           className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
-          href="https://counterspell-interest.mattsoh.dev/"
+          href="https://counterspell-signup.mattsoh.dev/"
           target="_blank"
           style={{ textDecorationLine: "none" }}
         >
