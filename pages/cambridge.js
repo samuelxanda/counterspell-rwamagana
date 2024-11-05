@@ -103,7 +103,7 @@ export default function Cambridge() {
           target="_blank"
           style={{ textDecorationLine: "none" }}
         >
-          Register interest
+          Sign up
         </a>
         <Hero />
 
