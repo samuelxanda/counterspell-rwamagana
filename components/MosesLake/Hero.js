@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="min-h-screen">
         <div
           className="relative flex flex-col justify-center text-center bg-top bg-no-repeat bg-cover pointer-events-none select-none -z-10 overflow-x-clip"
-          style={{ backgroundImage: `url(/city/silicon-valley/hero/bg5.png)` }}
+          style={{ backgroundImage: `url(/hero/bg5.png)` }}
         >
           <HeroScroll />
         </div>
@@ -60,7 +60,7 @@ function HeroScroll() {
             className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]"
           />
           <img
-            src="/title.png"
+            src="/city/moseslake/titlemoses2.png"
             alt="Counterspell"
             className="absolute h-auto top-[12%] lg:top-[17%] w-[70%] lg:scale-[130%] right-[15%]"
           />
@@ -78,8 +78,7 @@ function HeroScroll() {
                 A BEGINNER FRIENDLY GAME JAM
               </p>
               <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
-                {/* TODO: Replace `EXAMPLE CITY` with your city */}
-                NOVEMBER 23-24, 2024 • Plug and Play Tech Center
+                NOVEMBER 23-24, 2024 • MOSES LAKE
               </p>
             </div>
           </div>
@@ -93,7 +92,7 @@ function HeroScroll() {
               screenWidth > 640 ? (scrollY * 1) / 20 : 0
             }px)`,
           }}
-          src="/city/silicon-valley/hero/bg1.png"
+          src="/hero/bg1.png"
           alt=""
         />
         <img
@@ -103,7 +102,7 @@ function HeroScroll() {
               screenWidth > 640 ? (scrollY * 2) / 20 : 0
             }px)`,
           }}
-          src="/city/silicon-valley/hero/bg2.png"
+          src="/hero/bg2.png"
           alt=""
         />
         <img
@@ -113,7 +112,7 @@ function HeroScroll() {
               screenWidth > 640 ? (scrollY * 3) / 20 : 0
             }px)`,
           }}
-          src="/city/silicon-valley/hero/bg3.png"
+          src="/hero/bg3.png"
           alt=""
         />
         <img
@@ -123,7 +122,7 @@ function HeroScroll() {
               screenWidth > 640 ? (scrollY * 4) / 20 : 0
             }px)`,
           }}
-          src="/city/silicon-valley/hero/bg4.png"
+          src="/hero/bg4.png"
           alt=""
         />
       </div>
