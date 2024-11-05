@@ -36,7 +36,7 @@ export default function Steps() {
             <p>
               Counterspell Toronto will go on for{" "}
               <span className="text-pink">24 hours</span>
-              <span className="text-pink">24 hours From November 23-24</span>
+              <span className="text-pink"> From November 23-24</span>
             </p>
             <p>Here's a rough schedule so you know what to expect!</p>
           </div>

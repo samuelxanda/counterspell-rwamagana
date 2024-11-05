@@ -125,12 +125,20 @@ export default function Toronto() {
 
               <SecEmail />
             </div>
-            <img
-              src="/city/toronto/sponsers/terraCotta.png"
-              alt="Terra Cotta Cookies"
-              className="-[500px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
-            />
+            <div className="flex space-x-4">
+              <img
+                src="/city/toronto/sponsers/terraCotta.png"
+                alt="Terra Cotta Cookies"
+                className="w-[500px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+              />
+              <img
+                src="/city/toronto/sponsers/ubisoft-logo.png"
+                alt="Ubisoft Logo"
+                className="w-[260px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+              />
+            </div>
           </div>
+          
 
           <div className="bg-[#00001E] flex flex-col justify-center py-12 text-center faq fusion-pixel">
             <div className="m-6">
