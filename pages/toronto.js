@@ -134,7 +134,7 @@ export default function Toronto() {
               <img
                 src="/city/toronto/sponsers/ubisoft-logo.png"
                 alt="Ubisoft Logo"
-                className="w-[500px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+                className="w-[260px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
               />
             </div>
           </div>
