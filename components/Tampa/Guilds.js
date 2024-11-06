@@ -6,8 +6,8 @@ export default function Guilds() {
       <div className="text-3xl uppercase leading-[4rem] mx-6">
         <p>Artist, Musician or Coder?</p>
         <p>
-          Join one of three <span className="text-pink">guilds</span> when you
-          sign up!
+          Join one of three <span className="text-pink">guilds</span> when you&nbsp;
+          <a href="https://forms.hackclub.com/t/sdMpoL7wK9us">sign up!</a>
         </p>
       </div>
 

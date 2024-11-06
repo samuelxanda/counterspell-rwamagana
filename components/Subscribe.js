@@ -7,7 +7,7 @@ export default function Subscribe(props) {
   useEffect(() => {
     const interval = setInterval(() => {
       if (submitBtn === "Loading") {
-        setNumDots((prevNumDots) => 1 + (prevNumDots) % 3);
+        setNumDots((prevNumDots) => 1 + (prevNumDots % 3));
       }
     }, 300);
 
@@ -17,7 +17,7 @@ export default function Subscribe(props) {
   return (
     <form
       method="post"
-      action="/api/pre-signup"
+      action="/api/v1/pre-signup"
       className="flex flex-col space-y-4 text-2xl retro sm:text-3xl lg:flex-row lg:space-y-0"
       onSubmit={handleSubmit}
     >

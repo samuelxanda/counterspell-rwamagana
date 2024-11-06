@@ -14,7 +14,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/cards/artist.png"
+              src="/city/Lima-cards/artista.png"
               alt="Artist card"
               className="rounded-lg max-w-[340px]"
             />
@@ -23,7 +23,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/cards/musician.png"
+              src="/city/Lima-cards/musico.png"
               alt="Musician card"
               className="rounded-lg max-w-[340px]"
             />
@@ -32,7 +32,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/cards/hacker.png"
+              src="/city/Lima-cards/programador.png"
               alt="Hacker card"
               className="rounded-lg  max-w-[340px]"
             />
