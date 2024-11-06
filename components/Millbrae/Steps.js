@@ -5,14 +5,15 @@ export default function Steps() {
     <div className="py-12 space-y-6">
       <div className="flex flex-col justify-center text-center">
         <div className="">
-          <p className="py-10 mx-6 text-3xl uppercase retro" id="steps">
+          <p className="py-10 mx-6 text-3xl uppercase retro">
             How does a <span className="text-pink">game jam</span> work?
           </p>
           <div className="flex justify-center mx-12 my-6">
             <div className="flex flex-wrap items-center justify-center gap-6 p-8 border-4 border-dashed border-pink inter">
               <StepCard
                 img="/photos/3.png"
-                text="Sign up for Counterspell Silicon Valley"
+                // TODO: Change `Millbrae` to the name of your city
+                text="Sign up for Counterspell Millbrae"
               />
               <StepCard
                 img="/photos/4.png"
@@ -34,8 +35,10 @@ export default function Steps() {
           </div>
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
-              Counterspell Silicon Valley is a{" "}
-              <span className="text-pink">2-day</span> event.
+              {/* TODO: Change `Millbrae` to the name of your city */}
+              Counterspell Millbrae will go on for{" "}
+              {/* TODO: Change `24 hours` to match your event duration */}
+              <span className="text-pink">24 hours</span>
             </p>
             <p>Here's a rough schedule so you know what to expect!</p>
           </div>

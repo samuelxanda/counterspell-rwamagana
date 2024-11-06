@@ -49,43 +49,19 @@ function HeroScroll() {
         <div
           className="relative z-10 w-full max-w-2xl 2xl:max-w-6xl"
           style={{
-            transform: `translateY(${
-              screenWidth > 640 ? (scrollY * 5) / 20 : 0
-            }px)`,
+            transform: `translateY(${screenWidth > 640 ? (scrollY * 5) / 20 : 0}px)`,
           }}
         >
-          <img
-            src="/billboard.png"
-            alt="Billboard"
-            className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]"
-          />
-          <img
-            src="/city/boston/saopaulo-logo.png"
-            alt="São Paulo"
-            className="absolute h-auto top-0 top-[41%] scale-[35%] lg:top-[48%] lg:scale-[45%]"
-          />
-          <img
-            src="/title.png"
-            alt="Counterspell"
-            className="absolute h-auto top-[12%] lg:top-[16%] w-[70%] lg:scale-[125%] right-[15%]"
-          />
-          <img
-            src="/smoke.gif"
-            alt="Smoke"
-            className="absolute h-auto top-0 lg:top-[3%] w-full lg:scale-[130%] translate-x-[2%] hue-rot"
-          />
+          <img src="/billboard.png" alt="Billboard" className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]" />
+          <img src="/title.png" alt="Counterspell" className="absolute h-auto top-[12%] lg:top-[17%] w-[70%] lg:scale-[130%] right-[15%]" />
+          <img src="/smoke.gif" alt="Smoke" className="absolute h-auto top-0 lg:top-[5%] w-full lg:scale-[130%] translate-x-[1%] hue-rot" />
 
           <div className="hidden absolute top-[90%] lg:top-[145%] left-[9%] w-[80%] lg:scale-[130%] bg-[#090808] h-screen" />
 
           <div className="flex items-center justify-center text-center">
-            <div className="z-50 absolute top-[43%] lg:top-[45%] text-[60%] sm:text-[80%] md:text-[100%] lg:text-[140%] tracking-wide">
-              <p className="text-[#CFD8ED] retro">
-                UMA GAME JAM AMIGÁVEL PARA INICIANTES
-              </p>
-              <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] lg:mt-2">
-                {/* TODO: Replace `SÃO PAULO` with your city */}
-                23 DE NOVEMBRO DE 2024 • SÃO PAULO
-              </p>
+            <div className="z-50 absolute top-[43%] lg:top-[47%] text-[60%] sm:text-[80%] md:text-[100%] lg:text-[140%] tracking-wide">
+              <p className="text-[#CFD8ED] retro">HACK CLUB'S BEGINNER FRIENDLY GAME JAM</p>
+              <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">NOVEMBER 23, 2024, IN NAIROBI & 200+ CITIES</p>
             </div>
           </div>
         </div>
@@ -94,9 +70,7 @@ function HeroScroll() {
         <img
           className="absolute bottom-0 bg-no-repeat z-20 -mb-[60px] 2xl:-mb-[20px]"
           style={{
-            transform: `translateY(${
-              screenWidth > 640 ? (scrollY * 1) / 20 : 0
-            }px)`,
+            transform: `translateY(${screenWidth > 640 ? (scrollY * 1) / 20 : 0}px)`,
           }}
           src="/hero/bg1.png"
           alt=""
@@ -104,9 +78,7 @@ function HeroScroll() {
         <img
           className="absolute bottom-0 -z-20 -mb-[45px] 2xl:-mb-[10px]"
           style={{
-            transform: `translateY(${
-              screenWidth > 640 ? (scrollY * 2) / 20 : 0
-            }px)`,
+            transform: `translateY(${screenWidth > 640 ? (scrollY * 2) / 20 : 0}px)`,
           }}
           src="/hero/bg2.png"
           alt=""
@@ -114,9 +86,7 @@ function HeroScroll() {
         <img
           className="absolute bottom-0 -z-30 -mb-[25px] 2xl:mb-0 2xl:bottom-[10px]"
           style={{
-            transform: `translateY(${
-              screenWidth > 640 ? (scrollY * 3) / 20 : 0
-            }px)`,
+            transform: `translateY(${screenWidth > 640 ? (scrollY * 3) / 20 : 0}px)`,
           }}
           src="/hero/bg3.png"
           alt=""
@@ -124,9 +94,7 @@ function HeroScroll() {
         <img
           className="absolute bottom-0 -z-40 2xl:bottom-[40px]"
           style={{
-            transform: `translateY(${
-              screenWidth > 640 ? (scrollY * 4) / 20 : 0
-            }px)`,
+            transform: `translateY(${screenWidth > 640 ? (scrollY * 4) / 20 : 0}px)`,
           }}
           src="/hero/bg4.png"
           alt=""

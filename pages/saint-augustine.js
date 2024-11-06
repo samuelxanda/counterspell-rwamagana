@@ -1,45 +1,18 @@
-"======== READ ME BEFORE EDITING ========";
-/*
-Hello! this is the template for the city pages.
-
-To create a new page, make a copy of this file in the same directory (pages) and rename it for your city.
-Make a copy of the example components (components/SiliconValley) and rename it for your city.
-E.g. Ottawa, ON -> Ottawa.js and components/Ottawa.
-
-Replace all placeholder info, indicated by "TODO" comments, in this file and the components with the appropriate content!
-You do not need to use this template exactly, feel free to customize it as much as you see fit.
-
-Once you're done, make a copy of this file, rename it to your event, and edit it!
-E.g. Basking Ridge, NJ -> basking-ridge.js
-
-If you want to include additional assets, please add them under public/city/your-city-name.
-
-Make a PR and we'll review it as soon as we can!
-
-If you have any questions, send a message to the #counterspell channel on the Hack Club Slack and we'll try to help.
-
-P.S. Feel free to delete this comment block when you're done! 
-
-Note: To test your changes locally, use `yarn install` and `yarn dev`.
-*/
 
 import React, { useEffect, useRef, useState } from "react";
 import useSound from "use-sound";
 import Head from "next/head";
 
-// TODO: Change `SiliconValley` to the name of your city. This should match the folder you copied!
-import Hero from "../components/SiliconValley/Hero";
-import About from "../components/SiliconValley/About";
-import Action from "../components/SiliconValley/Action";
-import Sponsors from "../components/SiliconValley/Sponsors";
-import Guilds from "../components/SiliconValley/Guilds";
-import Steps from "../components/SiliconValley/Steps";
-import Locations from "../components/SiliconValley/Locations";
-import Faq from "../components/SiliconValley/Faq";
-import Footer from "../components/SiliconValley/Footer";
 
-// TODO: Change `SiliconValley` to the name of your city
-export default function SiliconValley() {
+import Hero from "../components/SaintAugustine/Hero";
+import About from "../components/SaintAugustine/About";
+import Guilds from "../components/SaintAugustine/Guilds";
+import Steps from "../components/SaintAugustine/Steps";
+import Locations from "../components/SaintAugustine/Locations";
+import Faq from "../components/SaintAugustine/Faq";
+import Footer from "../components/SaintAugustine/Footer";
+
+export default function SaintAugustine() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
@@ -73,7 +46,8 @@ export default function SiliconValley() {
   return (
     <>
       <Head>
-        <title>Counterspell Silicon Valley</title>
+        
+        <title>Counterspell Saint Augustine</title>
       </Head>
       <div>
         <div
@@ -127,14 +101,6 @@ export default function SiliconValley() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
 
-        <a
-          href="https://forms.hackclub.com/t/sdMpoL7wK9us?city=recMFiFOMNNSwr6dI"
-          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
-          style={{ textDecoration: "none" }}
-        >
-          Sign Up!
-        </a>
-
         <Hero />
 
         <div className="relative">
@@ -142,16 +108,11 @@ export default function SiliconValley() {
           <div className="absolute top-0 left-0 right-0 -bottom-4 -z-10 bg-dark"></div>
 
           <About />
-          <Action />
-          <Sponsors />
           <Guilds />
           <Steps />
           <Locations />
 
-          <div
-            className="flex flex-col justify-center py-12 text-center faq retro"
-            id="faq"
-          >
+          <div className="flex flex-col justify-center py-12 text-center faq retro">
             <div className="m-6">
               <p className="mb-6 text-3xl uppercase">
                 Frequently Asked Questions

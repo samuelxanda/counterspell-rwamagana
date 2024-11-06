@@ -125,8 +125,14 @@ export default function Lima() {
         <audio ref={audioRef} loop autoPlay>
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
-
-        <Hero />
+        <a
+          href= "https://forms.hackclub.com/t/t6AQoC7b2Lus?city=recziLEU34r8ic5K8"
+          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
+          style={{ textDecoration:"none" }}>
+        
+          Sign Up!
+          </a>
+        <Hero/>
 
         <div className="relative">
           <div className="absolute top-0 left-0 right-0 pointer-events-none -bottom-4 grainy-bg"></div>
