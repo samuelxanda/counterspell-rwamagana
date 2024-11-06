@@ -42,7 +42,8 @@ export default function Locations() {
           <p>
             Organize a Counterspell event in your city.{" "}
             <a
-              href="https://hack.club/counterspell-signup"
+              //href="https://hack.club/counterspell-signup"
+              href= "https://forms.hackclub.com/t/sdMpoL7wK9us"
               target="_blank"
               rel="noreferrer"
               className="text-pink"
