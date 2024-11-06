@@ -1,26 +1,13 @@
 import { Tilt } from "react-next-tilt";
-import { useState, useEffect } from "react";
 
 export default function Guilds() {
-
-  
-  const [isFeminine, setFeminine] = useState(false);
-
-  useEffect(_=>{
-    const interval = setInterval(() => setFeminine(!isFeminine), 5000);
-
-    return () => clearInterval(interval);
-  
-  }, [isFeminine])
-
-
   return (
     <div className="flex flex-col items-center justify-center py-24 text-center retro bg-darker">
       <div className="text-3xl uppercase leading-[4rem] mx-6">
-        <p>¿Artista, músic<span>{isFeminine ? "a" : "o"}</span> o programador<span className={!isFeminine ? "invisible" : ""}>a</span>?</p>
+        <p>Artist, Musician or Coder?</p>
         <p>
-          Únete a uno de los tres <span className="text-pink">grupos</span> al 
-          inscribirte.
+          Join one of three <span className="text-pink">guilds</span> when you
+          sign up!
         </p>
       </div>
 
@@ -57,8 +44,9 @@ export default function Guilds() {
       <div className="flex justify-center leading-[3rem] tracking-wider mx-6">
         <div className="max-w-6xl px-6 py-6 mt-6 border-4 border-dashed border-pink">
           <p className="text-3xl neuebit">
-            ¡Puedes unirte al grupo con el que te identifiques para swag y pins exclusivos! También podrás 
-            competir contra otros grupos en diversas actividades/retos a lo largo de Counterspell Madrid.
+            You can join the guild you identify with for exclusive swag and
+            badges! You also get to compete against other guilds in friendly
+            activities/challenges throughout Counterspell Moses Lake!
           </p>
         </div>
       </div>

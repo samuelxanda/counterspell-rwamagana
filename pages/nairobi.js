@@ -1,17 +1,16 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import useSound from "use-sound";
 import Head from "next/head";
 
-import Hero from "../components/Madrid/Hero";
-import About from "../components/Madrid/About";
-import Guilds from "../components/Madrid/Guilds";
-import Steps from "../components/Madrid/Steps";
-import Locations from "../components/Madrid/Locations";
-import Faq from "../components/Madrid/Faq";
-import Footer from "../components/Madrid/Footer";
+import Hero from "../components/Nairobi/Hero";
+import About from "../components/Nairobi/About";
+import Guilds from "../components/Nairobi/Guilds";
+import Steps from "../components/Nairobi/Steps";
+import Locations from "../components/Nairobi/Locations";
+import Faq from "../components/Nairobi/Faq";
+import Footer from "../components/Nairobi/Footer";
 
-export default function Madrid() {
+export default function Nairobi() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
@@ -45,7 +44,7 @@ export default function Madrid() {
   return (
     <>
       <Head>
-        <title>Counterspell Madrid</title>
+        <title>Counterspell Nairobi</title>
       </Head>
       <div>
         <div
@@ -58,10 +57,7 @@ export default function Madrid() {
           }}
           className="fixed bottom-3 right-3"
         >
-          <div
-            className="flex items-center justify-center border-2 rounded-full bg-darker border-pink size-12"
-            onClick={toggleMute}
-          >
+          <div className="flex items-center justify-center border-2 rounded-full bg-darker border-pink size-12" onClick={toggleMute}>
             {!isMuted ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,6 +95,14 @@ export default function Madrid() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
 
+        <a
+          className="fixed z-50 hidden w-48 text-center text-3xl px-5 py-3 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
+          target="_blank"
+          style={{ textDecorationLine: "none" }}
+        >
+          Sign up
+        </a>
         <Hero />
 
         <div className="relative">
@@ -112,9 +116,7 @@ export default function Madrid() {
 
           <div className="flex flex-col justify-center py-12 text-center faq retro">
             <div className="m-6">
-              <p className="mb-6 text-3xl uppercase">
-              Preguntas frecuentes
-              </p>
+              <p className="mb-6 text-3xl uppercase">Frequently Asked Questions</p>
               <div className="flex justify-center">
                 <Faq />
               </div>

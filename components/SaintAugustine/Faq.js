@@ -29,50 +29,47 @@ const faqBkgrs = [
 
 const faqData = [
   {
-    question: "¿Puedo apuntarme?",
-    answer: `
-        Si tienes 18 años o menos, sí. ¡Esperamos verte por aquí! Si tienes más de 18 años pero estás estudiando un 
-        grado medio o bachillerato, escríbenos a 
-        <a href="mailto:counterspell@nosesisaid.com">counterspell@nosesisaid.com</a>.`,
+    question: "Am I eligible to sign up?",
+    answer: `If you're 18 or under, yes, we are so excited to see you! If you're over 18 but
+        still in high school, shoot us an email at
+        <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.`,
   },
   {
-    question: "¿Cuesta algo participar?",
-    answer: `¡Es completamente gratuito! Tendremos comida, snacks y bebidas en la hackathon, por supuesto también swag, premios y pequeños mini-eventos.`,
+    question: "Does participating cost anything?",
+    answer: `It's entirely free! We'll have meals, snacks, and beverages onsite at the hackathon, as well as swag, prizes, and fun mini-events.`,
   },
   {
-    question: "¿Qué ha hecho Hack Club anteriormente?",
-    answer: `Hemos realizado varios eventos a lo largo del mundo. El verano de 2021,  
-        <a href="https://www.youtube.com/watch?v=2BID8_pGuqA&ab_channel=HackClub">cruzamos América en tren</a>.
-        El año pasado, tuvimos una hackathon <a href="https://www.youtube.com/watch?v=O1s5HqSqKi0&ab_channel=HackClub">acampando</a> en Cabot, Vermont.`,
+    question: "What has Hack Club done before?",
+    answer: `We have run multiple events around the world. The summer of '21, we 
+        <a href="https://www.youtube.com/watch?v=2BID8_pGuqA&ab_channel=HackClub">chartered a train across America</a>
+        and ran the world's longest hackathon on land. Last year, we ran an outdoors do-it-yourself <a href="https://www.youtube.com/watch?v=O1s5HqSqKi0&ab_channel=HackClub">camping 
+        adventure</a> in Cabot, Vermont.`,
   },
   {
-    question: "No sé programar, ¿puedo unirme?",
-    answer: `¡Esta hackathon es para programadores de todos los niveles! Tendremos workshops y otros eventos asi que únete y aprendamos juntos. 
-    Si quieres empezar explorando algunos proyectos introductorios, mira las <a href="https://workshops.hackclub.com/">Hack Club Workshops</a> (por ahora solo disponibles en inglés :( )`,
+    question: "I'm not good at coding, can I join?",
+    answer: `This hackathon is for hackers of all skill levels! We'll have workshops and other events so join us and let's learn together. If you'd like to start exploring some introductory projects, check out <a href="https://workshops.hackclub.com/">Hack Club Workshops</a>.`,
   },
   {
-    question: "¿Qué puedo crear para Counterspell?",
-    answer: `En Counterspell, queremos construir videojuegos de todo tipo. El tema será revelado al inicio del evento.`,
+    question: "What can I make at Counterspell?",
+    answer: `At Counterspell, we're building video games of all kinds! The theme will be revealed at the start of the hackathon.`,
   },
   {
-    question: "¿Qué necesito llevar para el evento?",
+    question: "What do I need to bring to Counterspell?",
     answer: `Your laptop, charger, and an open mind! If your location is overnight, also bring toiletries, and a sleeping bag.`,
-    answer: `Un portátil, cargador y ¡ganas de crear cosas! an open mind! Si tu evento es nocturno, no olvides llevar artículo de higiene personal y un saco de dormir.`,
   },
   {
-    question: "Mis padres están preocupados por algo o no entienden algo",
-    answer: `Estamos aquí para ayudar,
-    diles que escriban a <a href="mailto:counterspell@nosesisaid.com">counterspell@nosesisaid.com</a>(español) o <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a> (inglés)
-    y nos aseguraremos de responder todas sus preguntas.`,
+    question: "My parents are worried!",
+    answer: `We're here to help! Ask them to reach out to us at
+          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a> or contact the local point of contact <a href="mailto:joshuatw423@gmail.com">joshuatw423@gmail.com</a>
+          and we'll make sure to answer all their questions!`,
   },
   {
-    question: "¿A quién puedo contactar si tengo más preguntas?",
-    answer: `¡Contáctanos! Escríbenos en
+    question: "How can I reach out for more questions?",
+    answer: `Contact us! Reach out at
           <a href="https://hackclub.com/slack/">#counterspell</a>
-          en el Slack de Hack Club o escríbenos un correo a 
-          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>(inglés) o 
-          <a href="mailto:counterspell@nosesisaid.com">counterspell@nosesisaid.com</a>(español).
-          Estamos listos para responder todas vuestras preguntas.`,
+          on the Hack Club Slack or email us at
+          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.
+          We're always ready to answer all your questions!`,
   },
 ];
 

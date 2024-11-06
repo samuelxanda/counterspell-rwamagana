@@ -6,34 +6,41 @@ export default function Steps() {
       <div className="flex flex-col justify-center text-center">
         <div className="">
           <p className="py-10 mx-6 text-3xl uppercase retro">
-          ¿Cómo funciona una <span className="text-pink">jam</span>?
+            How does a <span className="text-pink">game jam</span> work?
           </p>
           <div className="flex justify-center mx-12 my-6">
             <div className="flex flex-wrap items-center justify-center gap-6 p-8 border-4 border-dashed border-pink inter">
               <StepCard
                 img="/photos/3.png"
-                text="Apúntate a Counterspell Madrid."
+                // TODO: Change `Millbrae` to the name of your city
+                text="Sign up for Counterspell Millbrae"
               />
               <StepCard
                 img="/photos/4.png"
-                text="Encuentra a un equipo con otros adolescentes en Counterspell."
+                text="Find a team of other teenagers at Counterspell"
               />
               <StepCard
                 img="/photos/5.png"
-                text="Empieza a construir tu juego (no necesitas experiencia)."
+                text="Start building your game (no experience needed)"
               />
               <StepCard
                 img="/photos/6.png"
-                text="Asiste a workshops o pídele a uno de nuestros mentores ayuda."
+                text="Attend workshops, or talk to one of our mentors for help"
               />
               <StepCard
                 img="/photos/7.png"
-                text="Publica lo que has creado y compártelo con el mundo."
+                text="Ship what you made and share it with the rest of the world!"
               />
             </div>
           </div>
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
-            <p>Aquí tienes un horario preliminar para saber qué esperar.</p>
+            <p>
+              {/* TODO: Change `Millbrae` to the name of your city */}
+              Counterspell Millbrae will go on for{" "}
+              {/* TODO: Change `24 hours` to match your event duration */}
+              <span className="text-pink">24 hours</span>
+            </p>
+            <p>Here's a rough schedule so you know what to expect!</p>
           </div>
         </div>
       </div>
