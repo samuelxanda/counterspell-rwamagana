@@ -1,4 +1,7 @@
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("../Map"), { ssr: false });
 
 export default function Locations() {
   // Do not update this list! We'll update it for you.
@@ -60,15 +63,11 @@ export default function Locations() {
         Not in the Bay Area?
       </p>
       <p className="text-xl">
-        There are 200+ other Counterspell locations worldwide!
+        There are 100+ other Counterspell locations worldwide!
       </p>
-      <div className="flex justify-center pt-24">
-        <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
-          {cities.map((city, i) => (
-            <p className="lg:odd:text-left lg:even:text-right" key={i}>
-              {city}
-            </p>
-          ))}
+      <div className="flex justify-center text-center text-2xl space-y-2 my-20">
+        <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
+          <Map full={false} />
         </div>
       </div>
     </div>

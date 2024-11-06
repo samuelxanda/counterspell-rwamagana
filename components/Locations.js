@@ -30,7 +30,7 @@ export default function Locations() {
 
       <div className="flex justify-center text-center text-2xl space-y-2 my-20">
         <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
-          <Map />
+          <Map full={false} />
         </div>
       </div>
 
@@ -38,25 +38,18 @@ export default function Locations() {
         <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
           <p>Counterspell is organized by teenagers, for teenagers.</p>
           <p>
-            Don't see your city on the list? Sign up to{" "}
+            See a city near you on the map? {" "}
             <a
-              href="https://hack.club/counterspell-signup"
+              href="https://forms.hackclub.com/t/sdMpoL7wK9us"
               target="_blank"
               rel="noreferrer"
               className="text-pink"
             >
-              organize here
+              Sign up here
             </a>
-            .
+            !
           </p>
         </div>
-      </div>
-
-      <div className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        <Subscribe />
       </div>
     </div>
   );

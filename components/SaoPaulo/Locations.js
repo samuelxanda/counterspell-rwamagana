@@ -21,7 +21,7 @@ export default function Locations() {
         Não consegue chegar em São Paulo?
       </p>
       <p className="text-xl">
-        Tem mais de 200 outros Counterspells pelo mundo!
+        Tem mais de 100 outros Counterspells pelo mundo!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">

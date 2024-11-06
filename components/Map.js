@@ -3,7 +3,8 @@ import {
   MapContainer,
   TileLayer,
   Marker,
-  Popup
+  Popup,
+  ZoomControl
 } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
@@ -21,7 +22,7 @@ const mapIcon = new L.Icon({
 
 const StyledMapContainer = MapContainer;
 
-export default function Map() {
+export default function Map({full}) {
   const [center, setCenter] = useState(
     window.innerWidth > 767.98 ? [35.683, -25.099] : [55, -100]
   )
@@ -55,8 +56,9 @@ export default function Map() {
         maxBoundsViscosity={1.0}
         zoom={2.5}
         minZoom={1}
-        style={{ width: '100%', height: '500px', zIndex: 0 }}
+        style={{ width: full ? '100vw' : '100%', height: full ? '100vh' : '500px', zIndex: 0 }}
         worldCopyJump={true}
+        zoomControl={!full}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -70,14 +72,16 @@ export default function Map() {
           >
            <Popup>
             {event.website ? 
-                <a href={event.website} rel="noopener noreferrer">
+                <a className="neuebit text-lg m-0" href={event.website} rel="noopener noreferrer">
                     Counterspell {event.name}
                 </a> :
-                <>Counterspell {event.name}</>
+                // idk why but even with the m-0 the margin is still there on the top and bottom so I added inline css
+                <p className="neuebit text-lg m-0" style={{margin:0}} >Counterspell {event.name} </p>
             }
           </Popup>
           </Marker>
         ))}
+        {full && <ZoomControl position="topright" />}
       </StyledMapContainer>
     </>
   )
