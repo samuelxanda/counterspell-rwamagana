@@ -37,7 +37,7 @@ import Faq from "../components/AbuDhabi/Faq";
 import Footer from "../components/AbuDhabi/Footer";
 
 // TODO: Change `ExampleCity` to the name of your city
-export default function Abu Dhabi() {
+export default function AbuDhabi() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
