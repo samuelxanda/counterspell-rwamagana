@@ -20,7 +20,7 @@ export default function Locations({ registrationRef }) {
     <div className="relative px-6 py-24 text-center neuebit bg-darker retro">
       <p className="text-3xl uppercase">
         {/* TODO: Replace `Example City` with your city */}
-        Can't make it to Boston?
+        Not in the Bay Area?
       </p>
       <p className="text-xl">
         There are 100+ other Counterspell locations worldwide!
