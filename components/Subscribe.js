@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Subscribe(props) {
   const [submitBtn, setSubmitBtn] = useState("Sign up");
+  const [numDots, setNumDots] = useState(3);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (submitBtn === "Loading") {
+        setNumDots((prevNumDots) => 1 + (prevNumDots % 3));
+      }
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <form
       method="post"
-      action="/api/pre-signup"
+      action="/api/v1/pre-signup"
       className="flex flex-col space-y-4 text-2xl retro sm:text-3xl lg:flex-row lg:space-y-0"
       onSubmit={handleSubmit}
     >
@@ -26,11 +37,14 @@ export default function Subscribe(props) {
         id="formSubmit"
       >
         {submitBtn}
+        {submitBtn == "Loading" ? ".".repeat(numDots) : ""}
       </button>
     </form>
   );
 
   function handleSubmit(e) {
+    setSubmitBtn("Loading");
+
     e.preventDefault();
     const form = e.target;
 

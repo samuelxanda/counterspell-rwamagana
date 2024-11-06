@@ -1,4 +1,5 @@
 import Subscribe from "../Subscribe";
+import Sponsors from "./Sponsors";
 
 export default function Locations() {
   // Do not update this list! We'll update it for you.
@@ -16,12 +17,13 @@ export default function Locations() {
 
   return (
     <div className="relative px-6 py-24 text-center neuebit bg-darker retro">
+      <Sponsors />
       <p className="text-3xl uppercase">
         {/* TODO: Replace `Example City` with your city */}
         Can't make it to Singapore?
       </p>
       <p className="text-xl">
-        There are 200+ other Counterspell locations worldwide!
+        There are 100+ other Counterspell locations worldwide!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
@@ -30,6 +32,9 @@ export default function Locations() {
               {city}
             </p>
           ))}
+          <p className="lg:odd:text-left lg:even:text-right">
+            ...and more!
+          </p>
         </div>
       </div>
 
@@ -40,16 +45,16 @@ export default function Locations() {
             Counterspell Singapore is organized by teenagers, for teenagers.
           </p>
           <p>
-            Organize a Counterspell event in your city.{" "}
+            Find a Counterspell event in your city.{" "}
             <a
-              href="https://hack.club/counterspell-signup"
+              href="https://counterspell.hackclub.com/"
               target="_blank"
               rel="noreferrer"
               className="text-pink"
             >
-              Sign up
+              Main website
             </a>
-            .
+            
           </p>
         </div>
       </div>

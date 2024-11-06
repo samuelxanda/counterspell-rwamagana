@@ -4,7 +4,7 @@ export default function Guilds() {
   return (
     <div className="flex flex-col items-center justify-center py-24 text-center retro bg-darker">
       <div className="text-3xl uppercase leading-[4rem] mx-6">
-        <p>Artista, Musico o programador?</p>
+        <p>¿Artista, Músico o Programador?</p>
         <p>
           Unete a uno de tres <span className="text-pink">grupos</span> cuando te registres!
         </p>
@@ -14,7 +14,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/cards/artist.png"
+              src="/city/santiago/cards/artista.png"
               alt="Artist card"
               className="rounded-lg max-w-[340px]"
             />
@@ -23,7 +23,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/cards/musician.png"
+              src="/city/santiago/cards/musico.png"
               alt="Musician card"
               className="rounded-lg max-w-[340px]"
             />
@@ -32,7 +32,7 @@ export default function Guilds() {
         <Tilt className="rounded-lg" scale={1.1}>
           <div>
             <img
-              src="/cards/hacker.png"
+              src="/city/santiago/cards/programador.png"
               alt="Hacker card"
               className="rounded-lg  max-w-[340px]"
             />
@@ -43,8 +43,8 @@ export default function Guilds() {
       <div className="flex justify-center leading-[3rem] tracking-wider mx-6">
         <div className="max-w-6xl px-6 py-6 mt-6 border-4 border-dashed border-pink">
           <p className="text-3xl neuebit">
-            Te puedes unir al grupo con el que te identifiques por regalos exclusivos y insignias
-            Tambien competiras contra otros grupos en actividades o desafios amistosos a travez de
+            Te puedes unir al grupo con el que te identifiques y conseguir regalos exclusivos e insignias
+            También competirás contra otros grupos en actividades o desafíos amistosos a travez de
             Counterspell Santiago!
           </p>
         </div>

@@ -20,7 +20,7 @@ export default function Locations() {
         Check out other Counterspell cities!
       </p>
       <p className="text-xl">
-        There are 200+ other Counterspell locations worldwide!
+        There are 100+ other Counterspell locations worldwide!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
@@ -41,10 +41,15 @@ export default function Locations() {
       </div>
 
       <div className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        <Subscribe eventName="Cambridge" />
+        <a
+          className="z-30 w-full max-w-6xl px-6 py-6 mt-6 text-2xl uppercase bg-pink hover:text-white motion-safe:hover:scale-105 motion-safe:transition-all"
+          href="https://counterspell-signup.mattsoh.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecorationLine: "none" }}
+        >
+          Sign up for Counterspell Cambridge
+        </a>
       </div>
     </div>
   );
