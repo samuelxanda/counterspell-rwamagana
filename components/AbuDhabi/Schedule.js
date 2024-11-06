@@ -1,21 +1,21 @@
 export default function Schedule() {
     // TODO: Edit this to match your event schedule
     const schedule = [
-      { time: "8:30 AM", event: "🚪 Doors open" },
-      { time: "9:30 AM", event: "👐 Opening ceremony" },
-      { time: "9:45 AM", event: "🤖 Hacking begins" },
+      { time: "8:30 AM", event: "Doors open" },
+      { time: "9:30 AM", event: "Opening ceremony" },
+      { time: "9:45 AM", event: "Hacking begins" },
       { time: "10:00 AM", event: "Workshop A" },
       { time: "11:00 AM", event: "Workshop B" },
-      { time: "12:00 PM", event: "🥪 Lunch" },
-      { time: "2:00 PM", event: "🎯 Activity" },
+      { time: "12:00 PM", event: "Lunch" },
+      { time: "2:00 PM", event: "Activity" },
       { time: "3:30 PM", event: "Workshop C" },
       { time: "4:30 PM", event: "?? Mystery ??" },
       { time: "5:00 PM", event: "Workshop D" },
-      { time: "6:30 PM", event: "🛑 Project wrap-up" },
-      { time: "7:00 PM", event: "🍕 Dinner" },
-      { time: "7:30 PM", event: "📺 Project demos" },
-      { time: "8:15 PM", event: "🗳️ Closing + voting" },
-      { time: "9:00 PM", event: "💔 Goodbye :)" },
+      { time: "6:30 PM", event: "Project wrap-up" },
+      { time: "7:00 PM", event: "Dinner" },
+      { time: "7:30 PM", event: "Project demos" },
+      { time: "8:15 PM", event: "Closing + voting" },
+      { time: "9:00 PM", event: "Goodbye :)" },
     ];
   
     return (
