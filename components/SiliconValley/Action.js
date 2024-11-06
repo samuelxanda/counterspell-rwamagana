@@ -18,7 +18,7 @@ export default function Guilds() {
           Join Our Discord
         </a>
         <a
-          href="#signup"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
           className="w-full px-6 py-6 text-2xl uppercase bg-pink hover:text-white motion-safe:hover:scale-105 motion-safe:transition-all"
         >
           Sign Up Now!
