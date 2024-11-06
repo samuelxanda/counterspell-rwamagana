@@ -35,6 +35,7 @@ import Steps from "../components/Casablanca/Steps";
 import Locations from "../components/Casablanca/Locations";
 import Faq from "../components/Casablanca/Faq";
 import Footer from "../components/Casablanca/Footer";
+import Sponsors from "../components/Casablanca/Sponsors" 
 
 // TODO: Change `ExampleCity` to the name of your city
 export default function Casablanca() {
@@ -126,6 +127,15 @@ export default function Casablanca() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
 
+        <a
+        className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+        href="https://counterspellcasablanca.fillout.com/t/7LZ3oYm3Efus"
+        target="_blank"
+        style={{ textDecorationLine: "none" }}
+      >
+        Register your interest!
+      </a>
+
         <Hero />
 
         <div className="relative">
@@ -149,6 +159,7 @@ export default function Casablanca() {
           </div>
         </div>
 
+        <Sponsors />
         <Footer />
 
         <svg width="0" height="0" className="block">
