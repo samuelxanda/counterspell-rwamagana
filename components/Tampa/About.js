@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex justify-center neuebit text-3xl py-24">
+    <div className="flex justify-center neuebit text-3xl py-24 opacity-100 bg-dark">
       <div className="space-y-12 max-w-8xl">
         <h2 className="pb-6 text-4xl text-center uppercase retro text-whitepurp">
           Make games, <span className="text-pink">meet cool people</span>
