@@ -9,8 +9,8 @@ export default function About() {
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
-              Counterspell New York is a beginner friendly game jam for high
-              schoolers happening in New York City where{" "}
+              Counterspell Valenzuela City is a beginner friendly game jam for high
+              schoolers happening in Valenzuela City where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
@@ -19,7 +19,7 @@ export default function About() {
             <p className="text-2xl uppercase retro">Build whatever you want!</p>
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
-              Any game counts! The theme for Counterspell New York will be
+              Any game counts! The theme for Counterspell Valenzuela City will be
               decided through peer voting before the event starts.{" "}
             </p>
             <p>
