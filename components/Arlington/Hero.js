@@ -70,6 +70,10 @@ function HeroScroll() {
             className="absolute h-auto top-0 lg:top-[5%] w-full lg:scale-[130%] translate-x-[1%] hue-rot"
           />
 
+          <p className="hero-city-name text-pink">
+            ARLINGTON
+          </p>
+
           <div className="hidden absolute top-[90%] lg:top-[145%] left-[9%] w-[80%] lg:scale-[130%] bg-[#090808] h-screen" />
 
           <div className="flex items-center justify-center text-center">
@@ -126,6 +130,19 @@ function HeroScroll() {
           alt=""
         />
       </div>
+
+      <style jsx>{`
+        .hero-city-name {
+          font-size: 4em;
+          font-family: "retro";
+          text-shadow: -5px 1px 0px #41ddff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-5%, -150%);
+          z-index: 10;
+        }
+        `}</style>
     </>
   );
 }
