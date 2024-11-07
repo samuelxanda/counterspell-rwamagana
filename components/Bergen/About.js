@@ -10,7 +10,7 @@ export default function About() {
             <p>
               {/* TODO: Change `Example City` to the name of your city --> DONE */}
               Counterspell Bergen is a beginner friendly game jam for high
-              schoolers happening in Bergen County where{" "}
+              schoolers happening in Bergen County, NJ where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
