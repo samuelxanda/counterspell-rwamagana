@@ -15,10 +15,13 @@
     "@tsparticles/confetti": "^3.5.0",
     "airtable-plus": "^1.0.4",
     "counterspell": "file:",
-    "next": "14.2.14",
+    "leaflet": "^1.9.4",
+    "next": "^14.2.15",
     "react": "^18",
     "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
     "react-next-tilt": "^0.4.3",
+    "theme-ui": "^0.16.2",
     "use-sound": "^4.0.3"
   },
   "devDependencies": {

@@ -20,7 +20,7 @@ export default function Locations() {
         嚟唔到香港？
       </p>
       <p className="text-2xl fusion-pixel">
-        全球有 200+ 個 Counterspell 活動！
+        全球有 100+ 個 Counterspell 活動！
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
@@ -36,7 +36,7 @@ export default function Locations() {
         <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
           <p>
             {/* TODO: Replace `Example City` with your city */}
-            Counterspell Example City is organized by teenagers, for teenagers.
+            Counterspell Hong Kong is organized by teenagers, for teenagers.
           </p>
           <p>
             Organize a Counterspell event in your city.{" "}
@@ -54,11 +54,15 @@ export default function Locations() {
       </div>
 
       <div className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        {/* TODO: Replace `Example City` with your city */}
-        <Subscribe eventName="Example City" />
+      <a
+        className="z-30 w-full max-w-6xl px-6 py-6 mt-6 text-2xl uppercase bg-pink hover:text-white fusion-pixel motion-safe:hover:scale-105 motion-safe:transition-all"
+        href="https://counterspell.fillout.com/hongkong?uid=locations"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecorationLine: "none" }}
+      >
+        立即報名加入參加Counterspell！
+      </a>
       </div>
     </div>
   );

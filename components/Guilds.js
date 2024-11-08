@@ -2,7 +2,7 @@ import { Tilt } from "react-next-tilt";
 
 export default function Guilds() {
   return (
-    <div className="flex flex-col items-center justify-center py-24 text-center retro bg-darker">
+    <div className="flex flex-col items-center justify-center py-24 text-center retro bg-darker" id="guilds">
       <div className="text-3xl uppercase leading-[4rem] mx-6">
         <p>Artist, Musician or Coder?</p>
         <p>
