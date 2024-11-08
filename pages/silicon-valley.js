@@ -74,6 +74,31 @@ export default function SiliconValley() {
     <>
       <Head>
         <title>Counterspell Silicon Valley</title>
+        {/* Meta tags for SEO on Google */}
+        <meta
+          name="description"
+          content="Hack Club's fall hackathon, open to all high schoolers."
+        />
+        <meta name="theme-color" content="#ff4186" />
+        {/* Meta tags for social media */}
+        <meta property="og:title" content="Counterspell Silicon Valley" />
+        <meta
+          property="og:description"
+          content="Hack Club's fall hackathon, open to all high schoolers."
+        />
+        <meta
+          property="og:image"
+          content="https://counterspell.hackclub.com/logo512.png"
+        />
+        <meta
+          property="og:url"
+          content="https://counterspell.hackclub.com/silicon-valley"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Counterspell Silicon Valley" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
       </Head>
       <div>
         <div
@@ -132,7 +157,14 @@ export default function SiliconValley() {
           className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
           style={{ textDecoration: "none" }}
         >
-          Sign Up!
+          Sign Up Now!
+        </a>
+        <a
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us?city=recMFiFOMNNSwr6dI"
+          className="text-white fixed top-24 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
+          style={{ textDecoration: "none" }}
+        >
+          Join our Discord!
         </a>
 
         <Hero />
