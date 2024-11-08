@@ -3,13 +3,10 @@ export default function Schedule() {
     { time: "10:00 AM", event: "Arrival" },
     { time: "11:00 AM", event: "Kickoff" },
     { time: "12:00 PM", event: "Lunch" },
-    { time: "3:00 PM", event: "Workshop 1" },
+    { time: "1:00 PM", event: "Workshop" },
     { time: "6:00 PM", event: "Dinner" },
-    { time: "9:00 PM", event: "Workshop 2" },
-    { time: "12:00 AM", event: "Midnight activity?" },
-    { time: "7:00 AM", event: "Breakfast" },
-    { time: "8:00 AM", event: "Judging" },
-    { time: "10:00 AM", event: "Winners announced" },
+    { time: "10:00 PM", event: "Judging" },
+    { time: "11:00 PM", event: "Winners announced" },
   ];
 
   return (
