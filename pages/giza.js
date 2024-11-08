@@ -27,16 +27,16 @@ import useSound from "use-sound";
 import Head from "next/head";
 
 // TODO: Change `ExampleCity` to the name of your city. This should match the folder you copied!
-import Hero from "../components/Alexandria/Hero";
-import About from "../components/Alexandria/About";
-import Guilds from "../components/Alexandria/Guilds";
-import Steps from "../components/Alexandria/Steps";
-import Locations from "../components/Alexandria/Locations";
-import Faq from "../components/Alexandria/Faq";
-import Footer from "../components/Alexandria/Footer";
+import Hero from "../components/Giza/Hero";
+import About from "../components/Giza/About";
+import Guilds from "../components/Giza/Guilds";
+import Steps from "../components/Giza/Steps";
+import Locations from "../components/Giza/Locations";
+import Faq from "../components/Giza/Faq";
+import Footer from "../components/Giza/Footer";
 
 // TODO: Change `ExampleCity` to the name of your city
-export default function Alexandria() {
+export default function Giza() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
