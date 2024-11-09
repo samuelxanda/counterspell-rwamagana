@@ -120,7 +120,7 @@ export default function Toronto() {
 
           <Locations />
 
-          <div className="bg-[#2A385A] flex flex-col justify-evenly items-center h-[700px]">
+          <div className="min-h-[700px] my-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
                 Help Us Bring the Magic By Being A Sponser
@@ -132,21 +132,21 @@ export default function Toronto() {
 
               <SecEmail />
             </div>
-            <div className="flex space-x-8">
+            <div className="flex flex-wrap justify-center space-y-5">
               <img
                 src="/city/toronto/sponsers/terraCotta.png"
                 alt="Terra Cotta Cookies"
-                className="w-[500px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+                className="m-5 w-[500px] mt-5 h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
               />
               <img
                 src="/city/toronto/sponsers/ubisoft-logo.png"
                 alt="Ubisoft Logo"
-                className="w-[260px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+                className="m-5 w-[260px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
               />
               <img
                 src="/city/toronto/sponsers/shopify.png"
-                alt="Ubisoft Logo"
-                className=" h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+                alt="Shopify Logo"
+                className="m-5 h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
               />
             </div>
           </div>

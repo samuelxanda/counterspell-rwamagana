@@ -1,19 +1,30 @@
 // Code snippet from: https://github.com/hackclub/counterspell/pull/3
 // Modified to tailor the page's needs.
 
-import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import 'leaflet/dist/leaflet.css';
-import events from './events.json';
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import "leaflet/dist/leaflet.css";
+import events from "./events.json";
 
-const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
-const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
-const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
-const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
+const MapContainer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.MapContainer),
+  { ssr: false },
+);
+const TileLayer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.TileLayer),
+  { ssr: false },
+);
+const Marker = dynamic(
+  () => import("react-leaflet").then((mod) => mod.Marker),
+  { ssr: false },
+);
+const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
+  ssr: false,
+});
 
 export default function Map() {
   const [center, setCenter] = useState([35.683, -25.099]);
-  const [mapIcon, setMapIcon] = useState(null); 
+  const [mapIcon, setMapIcon] = useState(null);
 
   const bounds = [
     [-85, -Infinity],
@@ -21,11 +32,11 @@ export default function Map() {
   ];
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const L = require('leaflet'); 
-      
+    if (typeof window !== "undefined") {
+      const L = require("leaflet");
+
       const icon = new L.Icon({
-        iconUrl: '/logo192.png',
+        iconUrl: "/logo192.png",
         iconSize: new L.Point(20, 20),
         popupAnchor: [0, 0],
       });
@@ -47,7 +58,7 @@ export default function Map() {
         maxBoundsViscosity={1.0}
         zoom={2.5}
         minZoom={1}
-        style={{ width: '100%', height: '500px' }}
+        style={{ width: "100%", height: "500px" }}
         worldCopyJump={true}
       >
         <TileLayer
@@ -61,7 +72,11 @@ export default function Map() {
             icon={mapIcon}
           >
             <Popup>
-              <a href={`https://hackclub.slack.com/archives/${event.slack_id}`} target="_blank" rel="noopener noreferrer">
+              <a
+                href={`https://hackclub.slack.com/archives/${event.slack_id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {event.name}
               </a>
             </Popup>
