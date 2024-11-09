@@ -40,9 +40,9 @@ export default function Locations() {
             Counterspell Abu Dhabi is organized by teenagers, for teenagers.
           </p>
           <p>
-            Organize a Counterspell event in your city.{" "}
+            Attend a Counterspell event in your city.{" "}
             <a
-              href="https://hack.club/counterspell-signup"
+              href="https://hackclubae.fillout.com/counterspell-signup"
               target="_blank"
               rel="noreferrer"
               className="text-pink"
