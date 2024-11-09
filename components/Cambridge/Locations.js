@@ -43,12 +43,12 @@ export default function Locations() {
       <div className="flex flex-col items-center space-y-3 uppercase">
         <a
           className="z-30 w-full max-w-6xl px-6 py-6 mt-6 text-2xl uppercase bg-pink hover:text-white motion-safe:hover:scale-105 motion-safe:transition-all"
-          href="https://counterspell-interest.mattsoh.dev"
+          href="https://counterspell-signup.mattsoh.dev"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecorationLine: "none" }}
         >
-          Register interest in Counterspell Cambridge
+          Sign up for Counterspell Cambridge
         </a>
       </div>
     </div>

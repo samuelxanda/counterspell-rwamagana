@@ -28,27 +28,6 @@ export default function Locations() {
           ))}
         </div>
       </div>
-
-      <div className="flex justify-center my-20 space-y-2 text-2xl text-center">
-        <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
-          <p>
-            {/* TODO: Replace `Example City` with your city */}
-            Counterspell Ottawa is organized by teenagers, for teenagers.
-          </p>
-          <p>
-            Organize a Counterspell event in your city.{" "}
-            <a
-              href="https://hack.club/counterspell-signup"
-              target="_blank"
-              rel="noreferrer"
-              className="text-pink"
-            >
-              Sign up
-            </a>
-            .
-          </p>
-        </div>
-      </div>
     </div>
   );
 }

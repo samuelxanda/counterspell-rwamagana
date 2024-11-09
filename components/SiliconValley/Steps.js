@@ -34,8 +34,8 @@ export default function Steps() {
           </div>
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
-              Counterspell Silicon Valley will go on for approximately{" "}
-              <span className="text-pink">24 hours</span>
+              Counterspell Silicon Valley is a{" "}
+              <span className="text-pink">2-day</span> event.
             </p>
             <p>Here's a rough schedule so you know what to expect!</p>
           </div>
