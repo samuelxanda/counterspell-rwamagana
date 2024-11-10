@@ -120,7 +120,7 @@ export default function Toronto() {
 
           <Locations />
 
-          <div className="min-h-[700px] my-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
+          <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
                 Help Us Bring the Magic By Being A Sponser
@@ -132,7 +132,7 @@ export default function Toronto() {
 
               <SecEmail />
             </div>
-            <div className="flex flex-wrap justify-center space-y-5">
+            <div className="flex flex-wrap justify-center space-y-5 mt-5">
               <img
                 src="/city/toronto/sponsers/terraCotta.png"
                 alt="Terra Cotta Cookies"
