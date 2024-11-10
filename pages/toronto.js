@@ -120,7 +120,7 @@ export default function Toronto() {
 
           <Locations />
 
-          <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
+          <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
                 Help Us Bring the Magic By Being A Sponser
@@ -136,19 +136,22 @@ export default function Toronto() {
               <img
                 src="/city/toronto/sponsers/shopify.png"
                 alt="Shopify Logo"
-                className="m-5  lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                className="m-5 lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                style={{imageRendering: "auto"}}
               />
 
               <img
                 src="/city/toronto/sponsers/terraCotta.png"
                 alt="Terra Cotta Cookies"
                 className="m-5  lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                style={{imageRendering: "auto"}}
               />
 
               <img
                 src="/city/toronto/sponsers/ubisoft-logo.png"
                 alt="Ubisoft Logo"
                 className="p-6 m-5 w-[200px] sm:w-[250px] md:w-[250px] lg:w-[250px] h-[200px] sm:h-[250px] md:h-[250px] lg:h-[250px] flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                style={{imageRendering: "auto"}}
               />
             </div>
           </div>
