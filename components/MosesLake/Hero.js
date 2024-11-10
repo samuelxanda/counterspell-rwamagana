@@ -60,7 +60,7 @@ function HeroScroll() {
             className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]"
           />
           <img
-            src="/city/moseslake/titlemoses2.png"
+            src="/city/moseslake/titlemoses3.png"
             alt="Counterspell"
             className="absolute h-auto top-[12%] lg:top-[17%] w-[70%] lg:scale-[130%] right-[15%]"
           />
@@ -78,7 +78,7 @@ function HeroScroll() {
                 A BEGINNER FRIENDLY GAME JAM
               </p>
               <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
-                NOVEMBER 23-24, 2024 • MOSES LAKE
+                NOVEMBER 23-24, 2024 • YOUTH DYNAMICS • MOSES LAKE
               </p>
             </div>
           </div>
