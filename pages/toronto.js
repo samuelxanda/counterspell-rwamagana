@@ -99,7 +99,14 @@ export default function Toronto() {
         <audio ref={audioRef} loop autoPlay>
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
-
+        <a
+          className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
+          target="_blank"
+          style={{ textDecorationLine: "none" }}
+        >
+          Sign up here!
+        </a>
         <Hero />
 
         <div className="relative">
@@ -113,7 +120,7 @@ export default function Toronto() {
 
           <Locations />
 
-          <div className="bg-[#2A385A] flex flex-col justify-evenly items-center h-[700px]">
+          <div className="min-h-[700px] my-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
                 Help Us Bring the Magic By Being A Sponser
@@ -125,11 +132,23 @@ export default function Toronto() {
 
               <SecEmail />
             </div>
-            <img
-              src="/city/toronto/sponsers/terraCotta.png"
-              alt="Terra Cotta Cookies"
-              className="-[500px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
-            />
+            <div className="flex flex-wrap justify-center space-y-5">
+              <img
+                src="/city/toronto/sponsers/terraCotta.png"
+                alt="Terra Cotta Cookies"
+                className="m-5 w-[500px] mt-5 h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+              />
+              <img
+                src="/city/toronto/sponsers/ubisoft-logo.png"
+                alt="Ubisoft Logo"
+                className="m-5 w-[260px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+              />
+              <img
+                src="/city/toronto/sponsers/shopify.png"
+                alt="Shopify Logo"
+                className="m-5 h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
+              />
+            </div>
           </div>
 
           <div className="bg-[#00001E] flex flex-col justify-center py-12 text-center faq fusion-pixel">
