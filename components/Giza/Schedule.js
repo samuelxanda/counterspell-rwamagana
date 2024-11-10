@@ -12,7 +12,7 @@ export default function Schedule() {
     { time: "5:30 PM", event: "Lightning talks" },
     { time: "7:30 PM", event: "Game demos!" },
     { time: "8:00 PM", event: "Dinner" },
-    { time: "9:00 AM", event: "Closing ceremony" },
+    { time: "9:00 PM", event: "Closing ceremony" },
   ];
 
   return (
