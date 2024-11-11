@@ -1,5 +1,5 @@
-import {Tilt} from "react-next-tilt";
-import {useState, useEffect} from "react";
+import { Tilt } from "react-next-tilt";
+import { useState, useEffect } from "react";
 
 export default function Guilds() {
   const [isMobileUser, setIsMobileUser] = useState(false);
