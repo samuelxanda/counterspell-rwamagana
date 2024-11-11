@@ -73,6 +73,7 @@ export default function Winnipeg() {
       <Head>
         {/* TODO: Change `Example City` to the name of your city */}
         <title>Counterspell Winnipeg</title>
+        <meta name="google-site-verification" content="WGbn-mcMXfXxWhxLedISgkGLPUBKU49mJUtepZZdKVY" />
       </Head>
       <div>
         <div
