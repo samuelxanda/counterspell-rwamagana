@@ -11,6 +11,7 @@ import Email from "../components/Toronto/Email";
 import Faq from "../components/Toronto/Faq";
 import Footer from "../components/Toronto/Footer";
 import SecEmail from "../components/Toronto/secEmail";
+import Teamgallery from "../components/Toronto/Teamgallery";
 
 export default function Toronto() {
   const [docHeight, setDocHeight] = useState(0);
@@ -167,7 +168,7 @@ export default function Toronto() {
             </div>
           </div>
         </div>
-
+        <Teamgallery />
         <Footer />
 
         <svg width="0" height="0" className="block">
