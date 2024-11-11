@@ -47,7 +47,7 @@ export default function Guilds() {
             {/* TODO: Change `Example City` to the name of your city */}
             You can join the guild you identify with for exclusive swag and
             badges! You also get to compete against other guilds in friendly
-            activities/challenges throughout Counterspell Example City!
+            activities/challenges throughout Counterspell Chennai!
           </p>
         </div>
       </div>
