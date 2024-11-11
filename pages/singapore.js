@@ -122,7 +122,7 @@ export default function Singapore() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
         <a
-        className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+        className="fixed z-50 px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
         href="https://forms.hackclub.com/t/sdMpoL7wK9us?city=recbTqzQrNJgc1h57"
         target="_blank"
         style={{ textDecorationLine: "none" }}
