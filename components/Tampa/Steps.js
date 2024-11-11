@@ -35,15 +35,13 @@ export default function Steps() {
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
               Counterspell Tampa will go on for{" "}
-              <span className="text-pink">12-24 hours</span>
+              <span className="text-pink">12 hours</span>
             </p>
-            <p className="italic normal-case">We're still working out the details, but we'll keep everyone who signs up updated!</p>
-            <br />
-            {/* <p>Here's a rough schedule so you know what to expect!</p> */}
+            <p>Here's a rough schedule so you know what to expect!</p>
           </div>
         </div>
       </div>
-      {/* <Schedule /> */}
+      <Schedule />
     </div>
   );
 }

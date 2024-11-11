@@ -73,7 +73,62 @@ export default function SiliconValley() {
   return (
     <>
       <Head>
-        <title>Counterspell Silicon Valley</title>
+        <title>Counterspell Silicon Valley - High School Hackathon</title>
+        <meta
+          name="description"
+          content="Join Counterspell Silicon Valley, Hack Club's fall hackathon open to all high schoolers. Learn, build, and connect with fellow young innovators."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ff4186" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://counterspell.hackclub.com/silicon-valley"
+        />
+        <meta
+          property="og:title"
+          content="Counterspell Silicon Valley - High School Hackathon"
+        />
+        <meta
+          property="og:description"
+          content="Join Counterspell Silicon Valley, Hack Club's fall hackathon open to all high schoolers. Learn, build, and connect with fellow young innovators."
+        />
+        <meta
+          property="og:image"
+          content="https://counterspell.hackclub.com/og-image-silicon-valley.png"
+        />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://counterspell.hackclub.com/silicon-valley"
+        />
+        <meta
+          property="twitter:title"
+          content="Counterspell Silicon Valley - High School Hackathon"
+        />
+        <meta
+          property="twitter:description"
+          content="Join Counterspell Silicon Valley, Hack Club's fall hackathon open to all high schoolers. Learn, build, and connect with fellow young innovators."
+        />
+        <meta
+          property="twitter:image"
+          content="https://counterspell.hackclub.com/og-image-silicon-valley.png"
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://counterspell.hackclub.com/silicon-valley"
+        />
       </Head>
       <div>
         <div
@@ -128,11 +183,11 @@ export default function SiliconValley() {
         </audio>
 
         <a
-          href="#signup"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us?city=recMFiFOMNNSwr6dI"
           className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
           style={{ textDecoration: "none" }}
         >
-          Sign Up!
+          Sign Up Now!
         </a>
 
         <Hero />

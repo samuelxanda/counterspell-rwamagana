@@ -47,7 +47,7 @@ function HeroScroll() {
     <>
       <div className="flex justify-center">
         <div
-          className="relative z-10 w-full max-w-2xl 2xl:max-w-6xl"
+          className="relative z-10 w-full max-w-2xl 2xl:max-w-5xl"
           style={{
             transform: `translateY(${
               screenWidth > 640 ? (scrollY * 5) / 20 : 0
@@ -55,32 +55,32 @@ function HeroScroll() {
           }}
         >
           <img
-            src="/billboard.png"
+            src="/city/silicon-valley/billboard.png"
             alt="Billboard"
-            className="w-full h-auto mt-[5%] lg:mt-[19%] lg:scale-[130%]"
+            className="w-full h-auto mt-[2%] lg:mt-[15%] lg:scale-[120%]"
           />
           <img
-            src="/title.png"
+            src="/city/silicon-valley/title.png"
             alt="Counterspell"
-            className="absolute h-auto top-[12%] lg:top-[17%] w-[70%] lg:scale-[130%] right-[15%]"
+            className="absolute h-auto top-[10%] lg:top-[15%] w-[65%] lg:scale-[120%] right-[17%]"
           />
           <img
             src="/smoke.gif"
             alt="Smoke"
-            className="absolute h-auto top-0 lg:top-[5%] w-full lg:scale-[130%] translate-x-[1%] hue-rot"
+            className="absolute h-auto top-0 lg:top-[3%] w-full lg:scale-[120%] translate-x-[1%] hue-rot"
           />
 
-          <div className="hidden absolute top-[90%] lg:top-[145%] left-[9%] w-[80%] lg:scale-[130%] bg-[#090808] h-screen" />
+          <div className="hidden absolute top-[85%] lg:top-[140%] left-[9%] w-[80%] lg:scale-[120%] bg-[#090808] h-screen" />
 
           <div className="flex items-center justify-center text-center">
-            <div className="z-50 absolute top-[43%] lg:top-[47%] text-[60%] sm:text-[80%] md:text-[100%] lg:text-[140%] tracking-wide">
+            <div className="z-50 absolute top-[40%] lg:top-[44%] text-[55%] sm:text-[75%] md:text-[95%] lg:text-[130%] tracking-wide">
               <p className="text-[#CFD8ED] retro">
                 A BEGINNER FRIENDLY GAME JAM
               </p>
-              <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
-                {/* TODO: Replace `EXAMPLE CITY` with your city */}
-                NOVEMBER 23-24, 2024 • Plug and Play Tech Center
+              <p className="text-pink retro text-[75%] sm:text-[80%] lg:text-[90%] mt-2">
+                NOV 23-24 • Plug and Play Tech Center • 9 AM - 5 PM
               </p>
+              <CountdownTimer targetDate="2024-11-23T09:00:00" />
             </div>
           </div>
         </div>
@@ -128,5 +128,70 @@ function HeroScroll() {
         />
       </div>
     </>
+  );
+}
+
+function CountdownTimer({ targetDate }) {
+  const [timeLeft, setTimeLeft] = useState(null);
+
+  useEffect(() => {
+    function calculateTimeLeft() {
+      const difference = +new Date(targetDate) - +new Date();
+      let timeLeft = {};
+
+      if (difference > 0) {
+        timeLeft = {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60),
+        };
+      }
+
+      return timeLeft;
+    }
+
+    setTimeLeft(calculateTimeLeft());
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
+
+  const formatTime = (time) => {
+    return time?.toString().padStart(2, "0") ?? "00";
+  };
+
+  if (!timeLeft) return null; // Don't render anything until after first client-side render
+
+  return (
+    <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 retro">
+      {Object.keys(timeLeft).length ? (
+        <div className="flex justify-center space-x-2 sm:space-x-4">
+          <div className="flex flex-col items-center">
+            <span>{formatTime(timeLeft.days)}</span>
+            <span className="text-[8px] sm:text-xs">DAYS</span>
+          </div>
+          <span>:</span>
+          <div className="flex flex-col items-center">
+            <span>{formatTime(timeLeft.hours)}</span>
+            <span className="text-[8px] sm:text-xs">HOURS</span>
+          </div>
+          <span>:</span>
+          <div className="flex flex-col items-center">
+            <span>{formatTime(timeLeft.minutes)}</span>
+            <span className="text-[8px] sm:text-xs">MINS</span>
+          </div>
+          <span>:</span>
+          <div className="flex flex-col items-center">
+            <span>{formatTime(timeLeft.seconds)}</span>
+            <span className="text-[8px] sm:text-xs">SECS</span>
+          </div>
+        </div>
+      ) : (
+        <span>Time's up!</span>
+      )}
+    </div>
   );
 }
