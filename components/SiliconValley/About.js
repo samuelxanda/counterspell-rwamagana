@@ -21,8 +21,8 @@ export default function About() {
             <p>
               {/* TODO: Change `24 hours` to match your event duration */}
               Whether you’re a beginner or experienced in programming- we’ll
-              have workshops, resources and mentors throughout the 24 hours to
-              help you with your project.
+              have workshops, resources and mentors throughout the two-day event
+              to help you with your project.
             </p>
           </div>
           <div

@@ -9,7 +9,7 @@ export default function About() {
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
               Counterspell Moses Lake is a beginner friendly game jam for high
-              schoolers happening in Moses Lake where{" "}
+              schoolers happening in at <a href="https://maps.app.goo.gl/4fgabTBcw2N5aNnHA" className="text-pink">Youth Dynamics</a> in Moses Lake where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
