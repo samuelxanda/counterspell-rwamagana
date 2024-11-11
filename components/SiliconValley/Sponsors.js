@@ -134,24 +134,6 @@ export default function Sponsors() {
             </div>
           </div>
           <br></br>
-          <p className="text-xl uppercase retro" style={{ fontSize: "1rem" }}>
-            <span style={{ color: "#65709c" }}>Special</span> Sponsors
-          </p>
-          <div
-            className="flex justify-center mx-12 my-6"
-            style={{ transform: "scale(0.75)", marginTop: "-2rem" }}
-          >
-            <div className="flex flex-wrap items-center justify-center gap-6 p-8 border-4 border-dashed border-pink inter">
-              {other_sponsors.map((sponsor, index) => (
-                <SponsorCardOther
-                  key={index}
-                  img={sponsor.image}
-                  text={sponsor.name}
-                  link={sponsor.url}
-                />
-              ))}
-            </div>
-          </div>
           <div className="flex justify-center mx-12 my-6"></div>
         </div>
       </div>

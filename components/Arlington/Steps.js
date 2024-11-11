@@ -12,7 +12,7 @@ export default function Steps() {
             <div className="flex flex-wrap items-center justify-center gap-6 p-8 border-4 border-dashed border-pink inter">
               <StepCard
                 img="/photos/3.png"
-                text="Sign up for Counterspell Tampa"
+                text="Sign up for Counterspell Arlington"
               />
               <StepCard
                 img="/photos/4.png"
@@ -34,8 +34,8 @@ export default function Steps() {
           </div>
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
-              Counterspell Tampa will go on for{" "}
-              <span className="text-pink">12 hours</span>
+              Counterspell Arlington will go on for{" "}
+              <span className="text-pink">24 hours</span>
             </p>
             <p>Here's a rough schedule so you know what to expect!</p>
           </div>

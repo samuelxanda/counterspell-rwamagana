@@ -1,9 +1,8 @@
-"======== READ ME BEFORE EDITING ========";
 /*
 Hello! this is the template for the city pages.
 
 To create a new page, make a copy of this file in the same directory (pages) and rename it for your city.
-Make a copy of the example components (components/SiliconValley) and rename it for your city.
+Make a copy of the example components (components/ExampleCity) and rename it for your city.
 E.g. Ottawa, ON -> Ottawa.js and components/Ottawa.
 
 Replace all placeholder info, indicated by "TODO" comments, in this file and the components with the appropriate content!
@@ -27,19 +26,17 @@ import React, { useEffect, useRef, useState } from "react";
 import useSound from "use-sound";
 import Head from "next/head";
 
-// TODO: Change `SiliconValley` to the name of your city. This should match the folder you copied!
-import Hero from "../components/SiliconValley/Hero";
-import About from "../components/SiliconValley/About";
-import Action from "../components/SiliconValley/Action";
-import Sponsors from "../components/SiliconValley/Sponsors";
-import Guilds from "../components/SiliconValley/Guilds";
-import Steps from "../components/SiliconValley/Steps";
-import Locations from "../components/SiliconValley/Locations";
-import Faq from "../components/SiliconValley/Faq";
-import Footer from "../components/SiliconValley/Footer";
+// TODO: Change `ExampleCity` to the name of your city. This should match the folder you copied!
+import Hero from "../components/Giza/Hero";
+import About from "../components/Giza/About";
+import Guilds from "../components/Giza/Guilds";
+import Steps from "../components/Giza/Steps";
+import Locations from "../components/Giza/Locations";
+import Faq from "../components/Giza/Faq";
+import Footer from "../components/Giza/Footer";
 
-// TODO: Change `SiliconValley` to the name of your city
-export default function SiliconValley() {
+// TODO: Change `ExampleCity` to the name of your city
+export default function Giza() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
@@ -73,62 +70,8 @@ export default function SiliconValley() {
   return (
     <>
       <Head>
-        <title>Counterspell Silicon Valley - High School Hackathon</title>
-        <meta
-          name="description"
-          content="Join Counterspell Silicon Valley, Hack Club's fall hackathon open to all high schoolers. Learn, build, and connect with fellow young innovators."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#ff4186" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://counterspell.hackclub.com/silicon-valley"
-        />
-        <meta
-          property="og:title"
-          content="Counterspell Silicon Valley - High School Hackathon"
-        />
-        <meta
-          property="og:description"
-          content="Join Counterspell Silicon Valley, Hack Club's fall hackathon open to all high schoolers. Learn, build, and connect with fellow young innovators."
-        />
-        <meta
-          property="og:image"
-          content="https://counterspell.hackclub.com/og-image-silicon-valley.png"
-        />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://counterspell.hackclub.com/silicon-valley"
-        />
-        <meta
-          property="twitter:title"
-          content="Counterspell Silicon Valley - High School Hackathon"
-        />
-        <meta
-          property="twitter:description"
-          content="Join Counterspell Silicon Valley, Hack Club's fall hackathon open to all high schoolers. Learn, build, and connect with fellow young innovators."
-        />
-        <meta
-          property="twitter:image"
-          content="https://counterspell.hackclub.com/og-image-silicon-valley.png"
-        />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-
-        {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://counterspell.hackclub.com/silicon-valley"
-        />
+        {/* TODO: Change `Example City` to the name of your city */}
+        <title>Counterspell Giza</title>
       </Head>
       <div>
         <div
@@ -182,14 +125,6 @@ export default function SiliconValley() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
 
-        <a
-          href="https://forms.hackclub.com/t/sdMpoL7wK9us?city=recMFiFOMNNSwr6dI"
-          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
-          style={{ textDecoration: "none" }}
-        >
-          Sign Up Now!
-        </a>
-
         <Hero />
 
         <div className="relative">
@@ -197,16 +132,11 @@ export default function SiliconValley() {
           <div className="absolute top-0 left-0 right-0 -bottom-4 -z-10 bg-dark"></div>
 
           <About />
-          <Action />
-          <Sponsors />
           <Guilds />
           <Steps />
           <Locations />
 
-          <div
-            className="flex flex-col justify-center py-12 text-center faq retro"
-            id="faq"
-          >
+          <div className="flex flex-col justify-center py-12 text-center faq retro">
             <div className="m-6">
               <p className="mb-6 text-3xl uppercase">
                 Frequently Asked Questions

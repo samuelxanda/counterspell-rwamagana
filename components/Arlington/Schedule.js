@@ -1,17 +1,12 @@
 export default function Schedule() {
   const schedule = [
-    { time: "8:30 AM", event: "Doors open" },
-    { time: "9:00 AM", event: "Opening ceremony" },
-    { time: "9:15 AM", event: "Start working on your game!" },
-    { time: "9:30 AM", event: "Initial gamedev workshop" },
+    { time: "10:00 AM", event: "Arrival" },
+    { time: "11:00 AM", event: "Kickoff" },
     { time: "12:00 PM", event: "Lunch" },
-    { time: "1:00 PM", event: "Gamedev workshop 2" },
-    { time: "3:00 PM", event: "Activity 1" },
-    { time: "5:30 PM", event: "Game design w/ The Forge" },
+    { time: "1:00 PM", event: "Workshop" },
     { time: "6:00 PM", event: "Dinner" },
-    { time: "7:30 PM", event: "Game demos!" },
-    { time: "8:00 PM", event: "Voting" },
-    { time: "8:15 PM", event: "Closing ceremony" },
+    { time: "10:00 PM", event: "Judging" },
+    { time: "11:00 PM", event: "Winners announced" },
   ];
 
   return (
@@ -25,6 +20,7 @@ export default function Schedule() {
               <p>{item.time}</p>
             </div>
           ))}
+          <p className="text-xl">All times are in Central Standard Time</p>
         </div>
       </div>
     </>
