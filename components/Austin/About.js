@@ -9,7 +9,7 @@ export default function About() {
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
               Counterspell Austin is a beginner friendly game jam for high
-              schoolers happening in Austin where{" "}
+              schoolers happening at <a href="https://maps.app.goo.gl/VqKXhzmfiogLmciX7" style={{textDecorationColor: '#FF4186'}}><span className="text-pink">Game Worlds</span></a> in Austin, TX where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
