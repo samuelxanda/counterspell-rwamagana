@@ -7,7 +7,6 @@ import About from "../components/Toronto/About";
 import Guilds from "../components/Toronto/Guilds";
 import Steps from "../components/Toronto/Steps";
 import Locations from "../components/Toronto/Locations";
-import Email from "../components/Toronto/Email";
 import Faq from "../components/Toronto/Faq";
 import Footer from "../components/Toronto/Footer";
 import SecEmail from "../components/Toronto/secEmail";
@@ -101,12 +100,13 @@ export default function Toronto() {
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
         <a
-        href="https://forms.hackclub.com/t/sdMpoL7wK9us"
-        className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
-        style={{ textDecoration:'none' }}
-      >
-        Sign Up Now!
-      </a>
+          className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
+          target="_blank"
+          style={{ textDecorationLine: "none" }}
+        >
+          Sign Up!
+        </a>
         <Hero />
 
         <div className="relative">
@@ -116,17 +116,15 @@ export default function Toronto() {
           <About />
           <Guilds />
           <Steps />
-          <Email />
-
           <Locations />
 
           <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
-                Help Us Bring the Magic By Being A Sponser
+                Help Us Bring the Magic By Being A Sponsor
               </div>
               <div className="text-2xl Sponser text-white font-semibold text-center fusion-pixel mb-8">
-                If you are interested in becoming a sponser, please contact us
+                If you are interested in becoming a sponsor, please contact us
                 at counterspellgta@gmail.com
               </div>
 
