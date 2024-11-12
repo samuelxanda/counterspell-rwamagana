@@ -7,7 +7,6 @@ import About from "../components/Toronto/About";
 import Guilds from "../components/Toronto/Guilds";
 import Steps from "../components/Toronto/Steps";
 import Locations from "../components/Toronto/Locations";
-import Email from "../components/Toronto/Email";
 import Faq from "../components/Toronto/Faq";
 import Footer from "../components/Toronto/Footer";
 import SecEmail from "../components/Toronto/secEmail";
@@ -106,7 +105,7 @@ export default function Toronto() {
           target="_blank"
           style={{ textDecorationLine: "none" }}
         >
-          Sign up here!
+          Sign Up!
         </a>
         <Hero />
 
@@ -117,17 +116,15 @@ export default function Toronto() {
           <About />
           <Guilds />
           <Steps />
-          <Email />
-
           <Locations />
 
           <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
-                Help Us Bring the Magic By Being A Sponser
+                Help Us Bring the Magic By Being A Sponsor
               </div>
               <div className="text-2xl Sponser text-white font-semibold text-center fusion-pixel mb-8">
-                If you are interested in becoming a sponser, please contact us
+                If you are interested in becoming a sponsor, please contact us
                 at counterspellgta@gmail.com
               </div>
 

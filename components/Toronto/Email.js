@@ -25,9 +25,8 @@ export default function Email() {
   return (
     <div className="relative px-6 py-24 text-center neuebit bg retro">
       <p className="text-3xl uppercase">
-        For any inquiries reach out to our gmail!
+        Have a question? Send us a message
       </p>
-      <p className="text-xl">Just copy and Paste</p>
       <button
         onClick={handleCopy}
         className={`
