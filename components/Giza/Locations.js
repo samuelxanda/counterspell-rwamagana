@@ -54,13 +54,7 @@ export default function Locations() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        {/* TODO: Replace `Example City` with your city */}
-        <Subscribe eventName="Giza" />
-      </div>
+      
     </div>
   );
 }
