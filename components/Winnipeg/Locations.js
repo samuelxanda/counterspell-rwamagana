@@ -32,35 +32,6 @@ export default function Locations() {
           ))}
         </div>
       </div>
-
-      <div className="flex justify-center my-20 space-y-2 text-2xl text-center">
-        <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
-          <p>
-            {/* TODO: Replace `Example City` with your city */}
-            Counterspell Winnipeg is organized by teenagers, for teenagers.
-          </p>
-          <p>
-            Organize a Counterspell event in your city.{" "}
-            <a
-              href="https://hack.club/counterspell-signup"
-              target="_blank"
-              rel="noreferrer"
-              className="text-pink"
-            >
-              Sign up
-            </a>
-            .
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col items-center space-y-3 uppercase">
-        <p className="text-xl text-center">
-          Get notified when registrations open
-        </p>
-        {/* TODO: Replace `Example City` with your city */}
-        <Subscribe eventName="Winnipeg" />
-      </div>
     </div>
   );
 }
