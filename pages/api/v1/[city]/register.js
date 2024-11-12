@@ -175,7 +175,7 @@ export default async function handler(req, res) {
   const events = await EventsTable.read({
     filterByFormula: "{Approval} = 'Approved'",
   });
-  const eventNames = events.map((event) => event.fields["Event Name- Final"]);
+  const eventNames = events.map((event) => event.fields["Event Name"]);
   const eventSlugs = eventNames.map((name) =>
     name
       .normalize("NFD")
