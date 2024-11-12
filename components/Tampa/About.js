@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex justify-center neuebit text-3xl py-24">
+    <div className="flex justify-center neuebit text-3xl py-24 opacity-100 bg-dark">
       <div className="space-y-12 max-w-8xl">
         <h2 className="pb-6 text-4xl text-center uppercase retro text-whitepurp">
           Make games, <span className="text-pink">meet cool people</span>
@@ -22,7 +22,7 @@ export default function About() {
             </p>
             <p>
               Whether you’re a beginner or experienced in programming- we’ll
-              have workshops, resources and mentors throughout the 24 hours to
+              have workshops, resources and mentors throughout the event to
               help you with your project.
             </p>
           </div>

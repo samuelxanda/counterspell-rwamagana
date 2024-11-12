@@ -78,7 +78,7 @@ function HeroScroll() {
                 HACK CLUB'S BEGINNER FRIENDLY GAME JAM
               </p>
               <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
-                NOVEMBER 23-24, 2024, IN 200+ CITIES
+                NOVEMBER 23-24, 2024, IN 100+ CITIES
               </p>
             </div>
           </div>

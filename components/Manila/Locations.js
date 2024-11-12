@@ -21,7 +21,7 @@ export default function Locations() {
         Can't make it to Manila?
       </p>
       <p className="text-xl">
-        There are 200+ other Counterspell locations worldwide!
+        There are 100+ other Counterspell locations worldwide!
       </p>
       <div className="flex justify-center pt-24">
         <div className="grid items-center justify-center w-full max-w-5xl grid-cols-1 gap-8 text-2xl lg:grid-cols-2">
@@ -35,7 +35,7 @@ export default function Locations() {
 
       <div className="flex justify-center text-center text-2xl space-y-2 my-20">
         <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
-          <Map />
+          <Map full={false} />
         </div>
       </div>
 

@@ -13,7 +13,7 @@ export default function Steps() {
               <StepCard
                 img="/photos/3.png"
                 // TODO: Change `Example City` to the name of your city
-                text="Sign up for Counterspell Example city"
+                text="Sign up for Counterspell Singapore"
               />
               <StepCard
                 img="/photos/4.png"

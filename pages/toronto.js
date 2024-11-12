@@ -7,10 +7,10 @@ import About from "../components/Toronto/About";
 import Guilds from "../components/Toronto/Guilds";
 import Steps from "../components/Toronto/Steps";
 import Locations from "../components/Toronto/Locations";
-import Email from "../components/Toronto/Email";
 import Faq from "../components/Toronto/Faq";
 import Footer from "../components/Toronto/Footer";
 import SecEmail from "../components/Toronto/secEmail";
+import Teamgallery from "../components/Toronto/Teamgallery";
 
 export default function Toronto() {
   const [docHeight, setDocHeight] = useState(0);
@@ -99,7 +99,14 @@ export default function Toronto() {
         <audio ref={audioRef} loop autoPlay>
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
-
+        <a
+          className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
+          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
+          target="_blank"
+          style={{ textDecorationLine: "none" }}
+        >
+          Sign Up!
+        </a>
         <Hero />
 
         <div className="relative">
@@ -109,27 +116,42 @@ export default function Toronto() {
           <About />
           <Guilds />
           <Steps />
-          <Email />
-
           <Locations />
 
-          <div className="bg-[#2A385A] flex flex-col justify-evenly items-center h-[700px]">
+          <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center">
             <div>
               <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
-                Help Us Bring the Magic By Being A Sponser
+                Help Us Bring the Magic By Being A Sponsor
               </div>
               <div className="text-2xl Sponser text-white font-semibold text-center fusion-pixel mb-8">
-                If you are interested in becoming a sponser, please contact us
+                If you are interested in becoming a sponsor, please contact us
                 at counterspellgta@gmail.com
               </div>
 
               <SecEmail />
             </div>
-            <img
-              src="/city/toronto/sponsers/terraCotta.png"
-              alt="Terra Cotta Cookies"
-              className="-[500px] h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)]"
-            />
+            <div className="flex flex-wrap justify-center space-y-5 pt-5">
+              <img
+                src="/city/toronto/sponsers/shopify.png"
+                alt="Shopify Logo"
+                className="m-5 lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                style={{imageRendering: "auto"}}
+              />
+
+              <img
+                src="/city/toronto/sponsers/terraCotta.png"
+                alt="Terra Cotta Cookies"
+                className="m-5  lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                style={{imageRendering: "auto"}}
+              />
+
+              <img
+                src="/city/toronto/sponsers/ubisoft-logo.png"
+                alt="Ubisoft Logo"
+                className="p-6 m-5 w-[200px] sm:w-[250px] md:w-[250px] lg:w-[250px] h-[200px] sm:h-[250px] md:h-[250px] lg:h-[250px] flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
+                style={{imageRendering: "auto"}}
+              />
+            </div>
           </div>
 
           <div className="bg-[#00001E] flex flex-col justify-center py-12 text-center faq fusion-pixel">
@@ -143,7 +165,7 @@ export default function Toronto() {
             </div>
           </div>
         </div>
-
+        <Teamgallery />
         <Footer />
 
         <svg width="0" height="0" className="block">
