@@ -6,7 +6,7 @@ const Map = dynamic(() => import("./Map"), { ssr:false });
 export default function Locations() {
   return (
     
-      <div className="relative px-6 py-24 text-center font-semibold text-4xl neuebit bg-darker retro">
+      <div className="relative px-6 py-24 text-center font-semibold md:text-4xl text-3xl neuebit bg-darker retro">
           Meet Us At{' '} 
           <a 
             href="https://www.google.com/maps/dir/?api=1&destination=620+King+St+W,+Toronto,+ON+M5V+1M7"
