@@ -32,11 +32,15 @@ const faqData = [
     question: "Sou eligível para participar?",
     answer: `Se você tem 18 anos ou menos, sim, nós estamos anciosos para te conhecer! Se você tem mais de 18 mas
         ainda no ensino médio, nos envie um email para
-        <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.`,
+        <a href="mailto:saopaulo@counterspell.hackclub.com">saopaulo@counterspell.hackclub.com</a>.`,
   },
   {
-    question: "Participar custa alguma coisa?",
+    question: "Quanto custa para participar?",
     answer: `É completamente de graça! Teremos refeições, snacks e bebidas (não alcoólicas!) no hackathon, como também brindes, prêmios e mini-eventos divertidos.`,
+  },
+  {
+    question: "Onde vai ser?",
+    answer: "Estamos fechando os últimos detalhes disso! Garantimos ser um lugar próximo a metrô ou ponto de ônibus."
   },
   {
     question: "O que Hack Club já fez no passado?",
@@ -60,13 +64,13 @@ const faqData = [
   {
     question: "Meus pais estão preocupados!",
     answer: `Estamos aqui para ajudar! Peça para eles mandarem um email para
-          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>
+          <a href="mailto:saopaulo@counterspell.hackclub.com">saopaulo@counterspell.hackclub.com</a>
           e nós vamos garantor de responder todos emails!`,
   },
   {
     question: "Tenho mais perguntas!",
     answer: `Contacte-nos! Mande um email para
-          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.
+          <a href="mailto:saopaulo@counterspell.hackclub.com">saopaulo@counterspell.hackclub.com</a>.
           Estamos aguardando para te responder!`,
   },
 ];
