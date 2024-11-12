@@ -64,7 +64,7 @@ export default function Sponsor() {
         <SponsorTier
           sponsorsPerRow={2}
           sponsorInfo={[
-            { fileName: "terraCotta.png", name: "Terra Cotta Cookies Logo", },
+            { fileName: "terraCotta.png", name: "Terra Cotta Cookies Logo", url: "https://terracottacookies.com/" },
             { fileName: "ubisoft-logo.png", name: "Ubisoft Logo", url: "https://www.ubisoft.com/en-us/" },
           ]}
         />
