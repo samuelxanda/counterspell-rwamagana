@@ -1,19 +1,21 @@
 export default function Schedule() {
   // TODO: Edit this to match your event schedule
   const schedule = [
-    { time: "11:00 AM", event: "Doors open" },
-    { time: "12:00 PM", event: "Opening ceremony" },
+    { time: "08:30 AM", event: "Doors open" },
+    { time: "09:00 AM", event: "Opening ceremony" },
+    { time: "09:30 AM", event: "Team formation & brainstorming" },
+    { time: "10:00 AM", event: "Gamedev workshop 1" },
+    { time: "11:00 AM", event: "Start working on your game!" },
     { time: "12:30 PM", event: "Lunch" },
-    { time: "1:00 PM", event: "Start working on your game!" },
-    { time: "2:00 PM", event: "Gamedev workshop 1" },
-    { time: "4:00 PM", event: "Activity 1" },
-    { time: "4:00 PM", event: "Gamedev workshop 2" },
+    { time: "1:00 PM", event: "Continue working on your game" },
+    { time: "2:00 PM", event: "Gamedev workshop 2" },
+    { time: "4:00 PM", event: "Fun activity" },
+    { time: "5:00 PM", event: "Continue working / Mentoring sessions" },
     { time: "6:00 PM", event: "Dinner" },
-    { time: "8:00 PM", event: "Lightning talks" },
-    { time: "12:00 AM", event: "Midnight surprise" },
-    { time: "8:00 AM", event: "Breakfast" },
-    { time: "10:30 AM", event: "Game demos!" },
-    { time: "12:00 PM", event: "Closing ceremony" },
+    { time: "7:00 PM", event: "Prepare for game demos" },
+    { time: "8:00 PM", event: "Game demos!" },
+    { time: "8:45 PM", event: "Closing ceremony & Awards" },
+    { time: "9:00 PM", event: "Event ends" },
   ];
 
   return (
