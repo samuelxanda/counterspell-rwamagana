@@ -42,9 +42,9 @@ function SponsorTier({ sponsorInfo, sponsorsPerRow }) {
 
 export default function Sponsor() {
   return (
-    <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center ">
+    <div className="py-16 bg-[#2A385A] flex flex-col justify-evenly items-center ">
       <div>
-        <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
+        <div className="text-3xl Sponser text-white font-semibold text-center retro mb-3">
           Help Us Bring the Magic By Being A Sponsor
         </div>
         <div className="text-2xl Sponser text-white font-semibold text-center fusion-pixel">
@@ -52,7 +52,7 @@ export default function Sponsor() {
           at <a href="mailto:counterspellgta@gmail.com">counterspellgta@gmail.com</a>
         </div>
       </div>
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center lg:pt-12 md:pt-8 pt-6">
         {/*Gold Sponsors*/}
         <SponsorTier
           sponsorsPerRow={1}
