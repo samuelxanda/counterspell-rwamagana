@@ -27,7 +27,7 @@ export default function Locations() {
         <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
           <p>Counterspell is organized by teenagers, for teenagers.</p>
           <p>
-            Want to join click the link! {" "}
+            Want to join click? the link! {" "}
             <a
               href="https://forms.hackclub.com/t/sdMpoL7wK9us"
               target="_blank"
