@@ -10,7 +10,7 @@ import Locations from "../components/Toronto/Locations";
 import Faq from "../components/Toronto/Faq";
 import Sponsor from "../components/Toronto/Sponsor"
 import Footer from "../components/Toronto/Footer";
-import Teamgallery from "../components/Toronto/Teamgallery";
+//import Teamgallery from "../components/Toronto/Teamgallery";
 
 export default function Toronto() {
   const [docHeight, setDocHeight] = useState(0);
@@ -101,10 +101,10 @@ export default function Toronto() {
         </audio>
         <a
           href="https://forms.hackclub.com/t/sdMpoL7wK9us"
-          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
+          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
           style={{ textDecoration:'none' }}
         >
-          Sign Up!
+          Sign Up
         </a>
         <Hero/>
 
@@ -129,7 +129,6 @@ export default function Toronto() {
             </div>
           </div>
         </div>
-        <Teamgallery/>
         <Footer/>
 
         <svg width="0" height="0" className="block">
