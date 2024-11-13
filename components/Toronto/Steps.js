@@ -34,8 +34,8 @@ export default function Steps() {
           </div>
           <div className="py-10 mx-6 space-y-4 text-xl uppercase retro">
             <p>
-              Counterspell Toronto will go on for{" "}
-              <span className="text-pink">24 hours</span>
+            Couterspell Toronto is a{" "}
+              <span className="text-pink">24-hour game jam</span>
               <span className="text-pink"> From November 23-24th</span>
             </p>
             <p>Here's a rough schedule so you know what to expect!</p>

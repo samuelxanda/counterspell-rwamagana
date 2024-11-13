@@ -100,10 +100,9 @@ export default function Toronto() {
           <source src="/music.mp3" type="audio/mp3"/>
         </audio>
         <a
-          className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
           href="https://forms.hackclub.com/t/sdMpoL7wK9us"
-          target="_blank"
-          style={{ textDecorationLine: "none" }}
+          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
+          style={{ textDecoration:'none' }}
         >
           Sign Up!
         </a>
