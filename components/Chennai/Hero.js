@@ -78,7 +78,8 @@ function HeroScroll() {
                 A BEGINNER FRIENDLY GAME JAM
               </p>
               <p className="text-pink retro text-[80%] sm:text-[90%] lg:text-[90%] mt-2">
-                NOVEMBER 23, 2024 • AUSTIN
+                {/* TODO: Replace `EXAMPLE CITY` with your city */}
+                NOVEMBER 23-24, 2024 • CHENNAI
               </p>
             </div>
           </div>
