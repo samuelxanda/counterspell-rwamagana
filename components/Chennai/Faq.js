@@ -32,7 +32,7 @@ const faqData = [
     question: "Am I eligible to sign up?",
     answer: `If you're 18 or under, yes, we are so excited to see you! If you're over 18 but
         still in high school, shoot us an email at
-        <a href="counterspellvalenzuelacity@gmail.com">counterspellvalenzuelacity@gmail.com</a>.`,
+        <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.`,
   },
   {
     question: "Does participating cost anything?",
@@ -55,20 +55,20 @@ const faqData = [
   },
   {
     question: "What do I need to bring to Counterspell?",
-    answer: `Your laptop, charger,jacket and an open mind!`,
+    answer: `Your laptop, charger, and an open mind! If your location is overnight, also bring toiletries, and a sleeping bag.`,
   },
   {
     question: "My parents are worried!",
     answer: `We're here to help! Ask them to reach out to us at
-          <a href="mailto:counterspellvalenzuelacity@gmail.com">counterspellvalenzuelacity@gmail.com</a>
+          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>
           and we'll make sure to answer all their questions!`,
   },
   {
     question: "How can I reach out for more questions?",
     answer: `Contact us! Reach out at
-          <a href="https://web.facebook.com/profile.php?id=61568321672234">Facebook-Counterspell-Valenzuela-City</a>
+          <a href="https://hackclub.com/slack/">#counterspell</a>
           on the Hack Club Slack or email us at
-          <a href="mailto:counterspellvalenzuelacity@gmail.com">counterspellvalenzuelacity@gmail.com</a>.
+          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.
           We're always ready to answer all your questions!`,
   },
 ];

@@ -1,48 +1,34 @@
-// Code snippet from: https://github.com/hackclub/counterspell/pull/3
-// Modified to tailor the page's needs.
+import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import 'leaflet/dist/leaflet.css';
 
-import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
-import "leaflet/dist/leaflet.css";
-import events from "./events.json";
-
-const MapContainer = dynamic(
-  () => import("react-leaflet").then((mod) => mod.MapContainer),
-  { ssr: false },
-);
-const TileLayer = dynamic(
-  () => import("react-leaflet").then((mod) => mod.TileLayer),
-  { ssr: false },
-);
-const Marker = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Marker),
-  { ssr: false },
-);
-const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
-  ssr: false,
-});
+const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
+const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
+const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
+const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 
 export default function Map() {
-  const [center, setCenter] = useState([35.683, -25.099]);
   const [mapIcon, setMapIcon] = useState(null);
 
-  const bounds = [
-    [-85, -Infinity],
-    [85, Infinity],
-  ];
+  const shopifyLocation = {
+    name: "Shopify Toronto",
+    address: "620 King St W, Toronto, ON M5V 1M7",
+    latitude: 43.6447152,
+    longitude: -79.4007628
+  };
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const L = require("leaflet");
-
-      const icon = new L.Icon({
-        iconUrl: "/logo192.png",
-        iconSize: new L.Point(20, 20),
-        popupAnchor: [0, 0],
+    if (typeof window !== 'undefined') {
+      const L = require('leaflet');
+      
+      delete L.Icon.Default.prototype._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
       });
-      setMapIcon(icon);
 
-      setCenter(window.innerWidth > 767.98 ? [35.683, -25.099] : [55, -100]);
+      setMapIcon(new L.Icon.Default());
     }
   }, []);
 
@@ -51,38 +37,38 @@ export default function Map() {
   }
 
   return (
-    <>
-      <MapContainer
-        center={center}
-        maxBounds={bounds}
-        maxBoundsViscosity={1.0}
-        zoom={2.5}
-        minZoom={1}
-        style={{ width: "100%", height: "500px" }}
-        worldCopyJump={true}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        />
-        {events.map((event, idx) => (
+    <div className="w-full max-w-6xl mx-auto px-4 py-8">
+      <div className="h-[500px] w-full rounded-lg overflow-hidden">
+        <MapContainer
+          center={[shopifyLocation.latitude, shopifyLocation.longitude]}
+          zoom={15}
+          style={{ width: '100%', height: '100%' }}
+          scrollWheelZoom={false}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
           <Marker
-            position={[event.latitude, event.longitude]}
-            key={idx}
+            position={[shopifyLocation.latitude, shopifyLocation.longitude]}
             icon={mapIcon}
           >
-            <Popup>
-              <a
-                href={`https://hackclub.slack.com/archives/${event.slack_id}`}
+          <Popup>
+            <div className="text-dark">
+              <strong>{shopifyLocation.name}</strong>
+              <br />
+              <a 
+                href="https://www.google.com/maps/dir/?api=1&destination=620+King+St+W,+Toronto,+ON+M5V+1M7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {event.name}
+                {shopifyLocation.address}
               </a>
-            </Popup>
+            </div>
+          </Popup>
           </Marker>
-        ))}
-      </MapContainer>
-    </>
+        </MapContainer>
+      </div>
+    </div>
   );
 }

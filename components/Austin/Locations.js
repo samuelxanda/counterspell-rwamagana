@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic";
-
-const Map = dynamic(() => import("./../Map"), { ssr:false });
+import Subscribe from "../Subscribe";
 
 export default function Locations() {
   // Do not update this list! We'll update it for you.
@@ -19,7 +17,8 @@ export default function Locations() {
   return (
     <div className="relative px-6 py-24 text-center neuebit bg-darker retro">
       <p className="text-3xl uppercase">
-        Can't make it to Moses Lake?
+        {/* TODO: Replace `Example City` with your city */}
+        Can't make it to Austin?
       </p>
       <p className="text-xl">
         There are 100+ other Counterspell locations worldwide!
@@ -35,10 +34,24 @@ export default function Locations() {
       </div>
 
       <div className="flex justify-center my-20 space-y-2 text-2xl text-center">
-        <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
-            <Map/>
-          </div>
+        <div className="px-6 py-6 text-4xl tracking-wider border-4 border-dashed border-pink neuebit">
+          <p>
+            Counterspell Austin is organized by teenagers, for teenagers.
+          </p>
+          <p>
+            Organize a Counterspell event in your city.{" "}
+            <a
+              href="https://hack.club/counterspell-signup"
+              target="_blank"
+              rel="noreferrer"
+              className="text-pink"
+            >
+              Sign up
+            </a>
+            .
+          </p>
         </div>
+      </div>
     </div>
   );
 }

@@ -175,7 +175,7 @@ export default async function handler(req, res) {
   const events = await EventsTable.read({
     filterByFormula: "{Approval} = 'Approved'",
   });
-  const eventNames = events.map((event) => event.fields["Event Name- Final"]);
+  const eventNames = events.map((event) => event.fields["Event Name"]);
   const eventSlugs = eventNames.map((name) =>
     name
       .normalize("NFD")
@@ -193,7 +193,7 @@ export default async function handler(req, res) {
       valid_cities: eventSlugs,
     });
   }
-  const linkedEventName = eventNames[eventSlugs.indexOf(city)];
+  const linkedEvent = events[eventSlugs.indexOf(city)];
 
   const errors = [];
   const warnings = [];
@@ -332,7 +332,7 @@ export default async function handler(req, res) {
   );
 
   body["Event Name"] = city;
-  body["Events Link"] = [linkedEventName];
+  body["Events Link"] = [linkedEvent.id];
 
   if (testing) {
     return res.json({

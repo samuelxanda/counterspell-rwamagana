@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   });
 
   const eventsInfo = events.map((event) => ({
-    name: event.fields["Event Name- Final"],
+    name: event.fields["Event Name"],
     website: event.fields["Website"],
     lat: event.fields["Coordinates"].split(", ")[0],
     lng: event.fields["Coordinates"].split(", ")[1]

@@ -10,7 +10,7 @@ export default function About() {
             <p>
               {/* TODO: Change `Example City` to the name of your city */}
               Counterspell Winnipeg is a beginner friendly game jam for high
-              schoolers across the city happening in the Exchange District where{" "}
+              schoolers across the city happening at Launch Exchange (500-167 Lombard Ave) where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}

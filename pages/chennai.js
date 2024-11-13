@@ -1,18 +1,43 @@
+"======== READ ME BEFORE EDITING ========";
+/*
+Hello! this is the template for the city pages.
+
+To create a new page, make a copy of this file in the same directory (pages) and rename it for your city.
+Make a copy of the example components (components/Chennai) and rename it for your city.
+E.g. Ottawa, ON -> Ottawa.js and components/Ottawa.
+
+Replace all placeholder info, indicated by "TODO" comments, in this file and the components with the appropriate content!
+You do not need to use this template exactly, feel free to customize it as much as you see fit.
+
+Once you're done, make a copy of this file, rename it to your event, and edit it!
+E.g. Basking Ridge, NJ -> basking-ridge.js
+
+If you want to include additional assets, please add them under public/city/your-city-name.
+
+Make a PR and we'll review it as soon as we can!
+
+If you have any questions, send a message to the #counterspell channel on the Hack Club Slack and we'll try to help.
+
+P.S. Feel free to delete this comment block when you're done! 
+
+Note: To test your changes locally, use `yarn install` and `yarn dev`.
+*/
+
 import React, { useEffect, useRef, useState } from "react";
 import useSound from "use-sound";
 import Head from "next/head";
 
-import Hero from "../components/Toronto/Hero";
-import About from "../components/Toronto/About";
-import Guilds from "../components/Toronto/Guilds";
-import Steps from "../components/Toronto/Steps";
-import Locations from "../components/Toronto/Locations";
-import Faq from "../components/Toronto/Faq";
-import Footer from "../components/Toronto/Footer";
-import SecEmail from "../components/Toronto/secEmail";
-import Teamgallery from "../components/Toronto/Teamgallery";
+// TODO: Change `Chennai` to the name of your city. This should match the folder you copied!
+import Hero from "../components/Chennai/Hero";
+import About from "../components/Chennai/About";
+import Guilds from "../components/Chennai/Guilds";
+import Steps from "../components/Chennai/Steps";
+import Locations from "../components/Chennai/Locations";
+import Faq from "../components/Chennai/Faq";
+import Footer from "../components/Chennai/Footer";
 
-export default function Toronto() {
+// TODO: Change `Chennai` to the name of your city
+export default function Chennai() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
@@ -46,7 +71,8 @@ export default function Toronto() {
   return (
     <>
       <Head>
-        <title>Counterspell Toronto</title>
+        {/* TODO: Change `Chennai` to the name of your city */}
+        <title>Counterspell Chennai</title>
       </Head>
       <div>
         <div
@@ -99,14 +125,7 @@ export default function Toronto() {
         <audio ref={audioRef} loop autoPlay>
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
-        <a
-          className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
-          href="https://forms.hackclub.com/t/sdMpoL7wK9us"
-          target="_blank"
-          style={{ textDecorationLine: "none" }}
-        >
-          Sign Up!
-        </a>
+
         <Hero />
 
         <div className="relative">
@@ -118,45 +137,9 @@ export default function Toronto() {
           <Steps />
           <Locations />
 
-          <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center">
-            <div>
-              <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
-                Help Us Bring the Magic By Being A Sponsor
-              </div>
-              <div className="text-2xl Sponser text-white font-semibold text-center fusion-pixel mb-8">
-                If you are interested in becoming a sponsor, please contact us
-                at counterspellgta@gmail.com
-              </div>
-
-              <SecEmail />
-            </div>
-            <div className="flex flex-wrap justify-center space-y-5 pt-5">
-              <img
-                src="/city/toronto/sponsers/shopify.png"
-                alt="Shopify Logo"
-                className="m-5 lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
-                style={{imageRendering: "auto"}}
-              />
-
-              <img
-                src="/city/toronto/sponsers/terraCotta.png"
-                alt="Terra Cotta Cookies"
-                className="m-5  lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
-                style={{imageRendering: "auto"}}
-              />
-
-              <img
-                src="/city/toronto/sponsers/ubisoft-logo.png"
-                alt="Ubisoft Logo"
-                className="p-6 m-5 w-[200px] sm:w-[250px] md:w-[250px] lg:w-[250px] h-[200px] sm:h-[250px] md:h-[250px] lg:h-[250px] flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
-                style={{imageRendering: "auto"}}
-              />
-            </div>
-          </div>
-
-          <div className="bg-[#00001E] flex flex-col justify-center py-12 text-center faq fusion-pixel">
+          <div className="flex flex-col justify-center py-12 text-center faq retro">
             <div className="m-6">
-              <p className="mb-6 text-5xl uppercase">
+              <p className="mb-6 text-3xl uppercase">
                 Frequently Asked Questions
               </p>
               <div className="flex justify-center">
@@ -165,7 +148,7 @@ export default function Toronto() {
             </div>
           </div>
         </div>
-        <Teamgallery />
+
         <Footer />
 
         <svg width="0" height="0" className="block">
