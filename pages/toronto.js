@@ -8,9 +8,9 @@ import Guilds from "../components/Toronto/Guilds";
 import Steps from "../components/Toronto/Steps";
 import Locations from "../components/Toronto/Locations";
 import Faq from "../components/Toronto/Faq";
+import Sponsor from "../components/Toronto/Sponsor"
 import Footer from "../components/Toronto/Footer";
-import SecEmail from "../components/Toronto/secEmail";
-import Teamgallery from "../components/Toronto/Teamgallery";
+//import Teamgallery from "../components/Toronto/Teamgallery";
 
 export default function Toronto() {
   const [docHeight, setDocHeight] = useState(0);
@@ -97,62 +97,26 @@ export default function Toronto() {
           </div>
         </div>
         <audio ref={audioRef} loop autoPlay>
-          <source src="/music.mp3" type="audio/mp3" />
+          <source src="/music.mp3" type="audio/mp3"/>
         </audio>
         <a
-          className="fixed z-50 hidden px-3 py-2 text-white uppercase sm:block top-4 right-4 retro bg-pink hover:scale-105 hover:text-white"
           href="https://forms.hackclub.com/t/sdMpoL7wK9us"
-          target="_blank"
-          style={{ textDecorationLine: "none" }}
+          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
+          style={{ textDecoration:'none' }}
         >
-          Sign Up!
+          Sign Up
         </a>
-        <Hero />
+        <Hero/>
 
         <div className="relative">
           <div className="absolute top-0 left-0 right-0 pointer-events-none -bottom-4 grainy-bg"></div>
           <div className="absolute top-0 left-0 right-0 -bottom-4 -z-10 bg-dark"></div>
 
-          <About />
-          <Guilds />
-          <Steps />
-          <Locations />
-
-          <div className="min-h-[700px] py-8 bg-[#2A385A] flex flex-col justify-evenly items-center">
-            <div>
-              <div className="uppercase text-3xl Sponser text-white font-semibold text-center retro mb-3">
-                Help Us Bring the Magic By Being A Sponsor
-              </div>
-              <div className="text-2xl Sponser text-white font-semibold text-center fusion-pixel mb-8">
-                If you are interested in becoming a sponsor, please contact us
-                at counterspellgta@gmail.com
-              </div>
-
-              <SecEmail />
-            </div>
-            <div className="flex flex-wrap justify-center space-y-5 pt-5">
-              <img
-                src="/city/toronto/sponsers/shopify.png"
-                alt="Shopify Logo"
-                className="m-5 lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
-                style={{imageRendering: "auto"}}
-              />
-
-              <img
-                src="/city/toronto/sponsers/terraCotta.png"
-                alt="Terra Cotta Cookies"
-                className="m-5  lg:w-[500px] h-[200px] sm:h-[200px] md:h-[260px] p-6 flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
-                style={{imageRendering: "auto"}}
-              />
-
-              <img
-                src="/city/toronto/sponsers/ubisoft-logo.png"
-                alt="Ubisoft Logo"
-                className="p-6 m-5 w-[200px] sm:w-[250px] md:w-[250px] lg:w-[250px] h-[200px] sm:h-[250px] md:h-[250px] lg:h-[250px] flex-shrink-0 rounded-[14px] bg-[#1A2F57] hover:bg-[#0D3059] transition-shadow duration-1000 hover:shadow-[20px_20px_4px_0px_rgba(0,255,255,0.88)] transform sm:scale-[0.9925]"
-                style={{imageRendering: "auto"}}
-              />
-            </div>
-          </div>
+          <About/>
+          <Guilds/>
+          <Steps/>
+          <Locations/>
+          <Sponsor/>
 
           <div className="bg-[#00001E] flex flex-col justify-center py-12 text-center faq fusion-pixel">
             <div className="m-6">
@@ -160,19 +124,18 @@ export default function Toronto() {
                 Frequently Asked Questions
               </p>
               <div className="flex justify-center">
-                <Faq />
+                <Faq/>
               </div>
             </div>
           </div>
         </div>
-        <Teamgallery />
-        <Footer />
+        <Footer/>
 
         <svg width="0" height="0" className="block">
           <filter id="grainy" x="0" y="0" width="100%" height="100%">
-            <feTurbulence type="fractalNoise" baseFrequency=".5" />
-            <feColorMatrix type="saturate" values="0" />
-            <feBlend in="SourceGraphic" mode="multiply" />
+            <feTurbulence type="fractalNoise" baseFrequency=".5"/>
+            <feColorMatrix type="saturate" values="0"/>
+            <feBlend in="SourceGraphic" mode="multiply"/>
           </filter>
         </svg>
       </div>

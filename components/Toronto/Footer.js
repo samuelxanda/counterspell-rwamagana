@@ -24,21 +24,21 @@ export default function Footer() {
         </a>{" "}
         |{" "}
         <a
-          href="https://www.youtube.com/@HackClubHQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mx-4"
-        >
-          YouTube
-        </a>{" "}
-        |{" "}
-        <a
-          href="https://www.instagram.com/starthackclub/"
+          href="https://www.instagram.com/counterspelltoronto/"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-4"
         >
           Instagram
+        </a>{" "}
+        |{" "}
+        <a
+          href="mailto:toronto@counterspell.hackclub.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-4"
+        >
+          Email
         </a>
       </div>
       <div className="text-center">
