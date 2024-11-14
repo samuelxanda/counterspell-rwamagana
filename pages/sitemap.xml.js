@@ -19,9 +19,13 @@ ${paths
 }
 
 export async function getServerSideProps({ res }) {
-  // We make an API call to gather the URLs for our site
   let pages = await glob("pages/**/*.js");
-  const specific_ignored = ["sitemap.xml.js", "404.js", "index.js"];
+  const specific_ignored = [
+    "sitemap.xml.js",
+    "404.js",
+    "index.js",
+    "example-city.js",
+  ];
   pages = pages.map((page) =>
     page.replaceAll("\\", "/").replace("pages/", "").replace(".js", "")
   );
@@ -39,6 +43,10 @@ export async function getServerSideProps({ res }) {
   res.setHeader("Content-Type", "text/xml");
   res.write(sitemap);
   res.end();
+
+  return {
+    props: {},
+  };
 }
 
 export default function dummy() {}
