@@ -8,8 +8,9 @@ export default function About() {
         <div className="grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-12 leading-[3rem] tracking-wider mx-6 2xl:mx-0">
           <div className="row-span-2 p-8 space-y-12 border-4 border-dashed border-pink md:p-12">
             <p>
-              Counterspell Austin is a beginner friendly game jam for high
-              schoolers happening at <a href="https://maps.app.goo.gl/VqKXhzmfiogLmciX7" style={{textDecorationColor: '#FF4186'}}><span className="text-pink">Game Worlds</span></a> in Austin, TX where{" "}
+              {/* TODO: Change `Chennai` to the name of your city */}
+              Counterspell Chennai is a beginner friendly game jam for high
+              schoolers happening in Chennai where{" "}
               <span className="text-pink">
                 artists, musicians, and coders
               </span>{" "}
@@ -17,10 +18,12 @@ export default function About() {
             </p>
             <p className="text-2xl uppercase retro">Build whatever you want!</p>
             <p>
-              Any game counts! The theme for Counterspell Austin will be
+              {/* TODO: Change `Chennai` to the name of your city */}
+              Any game counts! The theme for Counterspell Chennai will be
               decided through peer voting before the event starts.{" "}
             </p>
             <p>
+              {/* TODO: Change `24 hours` to match your event duration */}
               Whether you’re a beginner or experienced in programming- we’ll
               have workshops, resources and mentors throughout the 12 hours to
               help you with your project.

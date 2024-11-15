@@ -1,3 +1,4 @@
+
 "======== READ ME BEFORE EDITING ========";
 /*
 Hello! this is the template for the city pages.
@@ -28,16 +29,16 @@ import useSound from "use-sound";
 import Head from "next/head";
 
 // TODO: Change `ExampleCity` to the name of your city. This should match the folder you copied!
-import Hero from "../components/Winnipeg/Hero";
-import About from "../components/Winnipeg/About";
-import Guilds from "../components/Winnipeg/Guilds";
-import Steps from "../components/Winnipeg/Steps";
-import Locations from "../components/Winnipeg/Locations";
-import Faq from "../components/Winnipeg/Faq";
-import Footer from "../components/Winnipeg/Footer";
+import Hero from "../components/Patna/Hero";
+import About from "../components/Patna/About";
+import Guilds from "../components/Patna/Guilds";
+import Steps from "../components/Patna/Steps";
+import Locations from "../components/Patna/Locations";
+import Faq from "../components/Patna/Faq";
+import Footer from "../components/Patna/Footer";
 
 // TODO: Change `ExampleCity` to the name of your city
-export default function Winnipeg() {
+export default function Patna() {
   const [docHeight, setDocHeight] = useState(0);
   const [scrollPos, setScrollPos] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
@@ -72,8 +73,7 @@ export default function Winnipeg() {
     <>
       <Head>
         {/* TODO: Change `Example City` to the name of your city */}
-        <title>Counterspell Winnipeg</title>
-        <meta name="google-site-verification" content="WGbn-mcMXfXxWhxLedISgkGLPUBKU49mJUtepZZdKVY" />
+        <title>Counterspell Patna</title>
       </Head>
       <div>
         <div
@@ -126,13 +126,7 @@ export default function Winnipeg() {
         <audio ref={audioRef} loop autoPlay>
           <source src="/music.mp3" type="audio/mp3" />
         </audio>
-        <a
-          href="https://forms.hackclub.com/t/sdMpoL7wK9us?city=rec983nw9utITd2DM"
-          className="text-white fixed top-4 right-4 retro bg-pink py-2 px-3 lg:py-3 lg:px-4 uppercase z-50 hover:scale-105 hover:text-white no-underline md:text-[1.5rem] lg:text-[1.7rem]"
-          style={{ textDecoration: "none" }}
-        >
-          Sign Up Now!
-        </a>
+
         <Hero />
 
         <div className="relative">

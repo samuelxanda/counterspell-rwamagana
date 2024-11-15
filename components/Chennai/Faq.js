@@ -32,7 +32,7 @@ const faqData = [
     question: "Am I eligible to sign up?",
     answer: `If you're 18 or under, yes, we are so excited to see you! If you're over 18 but
         still in high school, shoot us an email at
-        <a href="mailto:toronto@counterspell.hackclub.com">toronto@counterspell.hackclub.com</a>.`,
+        <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.`,
   },
   {
     question: "Does participating cost anything?",
@@ -60,7 +60,7 @@ const faqData = [
   {
     question: "My parents are worried!",
     answer: `We're here to help! Ask them to reach out to us at
-          <a href="mailto:toronto@counterspell.hackclub.com">toronto@counterspell.hackclub.com</a>
+          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>
           and we'll make sure to answer all their questions!`,
   },
   {
@@ -68,7 +68,7 @@ const faqData = [
     answer: `Contact us! Reach out at
           <a href="https://hackclub.com/slack/">#counterspell</a>
           on the Hack Club Slack or email us at
-          <a href="mailto:toronto@counterspell.hackclub.com">toronto@counterspell.hackclub.com</a>.
+          <a href="mailto:counterspell@hackclub.com">counterspell@hackclub.com</a>.
           We're always ready to answer all your questions!`,
   },
 ];
